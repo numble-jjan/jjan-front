@@ -1,11 +1,10 @@
 import React from 'react';
-
-import GlobalStyle from './styles/global';
+import AppRouter from './AppRouter';
 
 function App() {
   return (
     <React.Fragment>
-      <GlobalStyle />
+      <AppRouter />
     </React.Fragment>
   );
 }
