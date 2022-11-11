@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '../shared/components';
-import { Typo } from '../shared/components';
+import { Button } from '../@components';
+import { Typography } from '../@components';
 
 const Main = () => {
   return (
     <>
-      <Typo color={'black'} fontSize={1.5}>
+      <Typography color={'black'} fontSize={1.5}>
         메인
-      </Typo>
+      </Typography>
       <Link to="/">
         <Button backgroundColor={'white'} color={'black'} borderColor={'gray'}>
           시작하기
@@ -17,4 +17,5 @@ const Main = () => {
     </>
   );
 };
+
 export default Main;
