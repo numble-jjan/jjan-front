@@ -19,7 +19,7 @@ const Root = styled.div<RootProps>`
   ${props => `font-size: ${props.fontSize}rem;`}
 `;
 
-const Typo: React.FC<Props> = ({
+const Typography: React.FC<Props> = ({
   color,
   fontSize,
   children,
@@ -33,4 +33,4 @@ const Typo: React.FC<Props> = ({
   );
 };
 
-export default Typo;
+export default Typography;
