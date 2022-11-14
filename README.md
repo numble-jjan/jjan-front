@@ -1,5 +1,5 @@
 <h1 align="center">짠</h1>
-<h2 align="center">혼자, 같이 마시는 지역기반 커뮤니티 서비스</h2> 
+<h2 align="center">혼자, 같이 마시는 지역기반 커뮤니티 서비스</h2>
 
 <h2 align="center">💻stack</h2>  
 <div align="center">

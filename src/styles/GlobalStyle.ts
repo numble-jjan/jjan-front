@@ -1,12 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import './global.css';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
   
   body {
-    width: 320px;
-    height: 648px;
+    font-family: 'Noto Sans KR', sans-serif;   
+    font-style: normal;
+    font-weight: nomal;
   }
 `;
 
