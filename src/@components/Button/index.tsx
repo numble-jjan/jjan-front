@@ -11,6 +11,7 @@ type Props = {
   children: any;
   onClick?: () => void;
   style?: any;
+  fontSize?: number;
   fontWeight?: string;
 };
 
@@ -18,6 +19,7 @@ type RootProps = {
   width?: number;
   height?: number;
   borderRadius?: number;
+  fontSize?: number;
   backgroundColor: string;
   color: string;
   borderColor?: string;
@@ -29,12 +31,13 @@ const Root = styled.div<RootProps>`
   justify-content: center;
   align-items: center;
   text-align: center;
-  ${props => `width: ${props.width}rem;`}
-  ${props => `height: ${props.height}rem;`}
+  ${props => `width: ${props.width}px;`}
+  ${props => `height: ${props.height}px;`}
   ${props => `border-radius: ${props.borderRadius}rem;`}
   ${props => `background-color: ${props.backgroundColor};`}
   ${props => `color: ${props.color};`}
-  ${props => `border-color: ${props.borderColor};`} 
+  ${props => `border-color: ${props.borderColor};`}  
+  ${props => `font-size: ${props.fontSize}px;`}
   ${props => `font-weight: ${props.fontWeight};`}
   cursor: pointer;
 `;
@@ -49,6 +52,7 @@ const Button: React.FC<Props> = ({
   onClick,
   children,
   style,
+  fontSize,
   fontWeight,
 }) => {
   return (
@@ -62,6 +66,7 @@ const Button: React.FC<Props> = ({
         borderColor={borderColor}
         onClick={onClick}
         style={style}
+        fontSize={fontSize}
         fontWeight={fontWeight}
       >
         {children}
