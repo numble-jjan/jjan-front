@@ -11,7 +11,7 @@ const Header = ({ title, onClick }: Props) => {
   return (
     <Container>
       <IconWrapper onClick={onClick}>
-        <img src="icons/prev.svg" alt="" />
+        <img src="icons/prev.svg" alt="이전으로 가기" />
       </IconWrapper>
       <Typography fontSize={18}>{title}</Typography>
     </Container>
