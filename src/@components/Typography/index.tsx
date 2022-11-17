@@ -16,7 +16,7 @@ type RootProps = {
 
 const Root = styled.div<RootProps>`
   ${props => `color: ${props.color};`}
-  ${props => `font-size: ${props.fontSize}rem;`}
+  ${props => `font-size: ${props.fontSize}px;`}
 `;
 
 const Typography: React.FC<Props> = ({
