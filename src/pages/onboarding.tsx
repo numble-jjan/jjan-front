@@ -4,6 +4,7 @@ import { Button } from '../@components';
 import { Typography } from '../@components';
 import {
   Root,
+  TextBox,
   Firstgreeting,
   Introduce,
   SignUpButton,
@@ -15,16 +16,20 @@ const Onboarding = () => {
     <Root>
       <img src="/logo.png" />
       <Firstgreeting>
-        <Typography
-          color={color.main}
-          fontSize={18}
-          style={{ fontWeight: 'bold' }}
-        >
-          JJAN
-        </Typography>
-        <Typography color={color.black} fontSize={18}>
-          에 오신 것을 환영합니다!
-        </Typography>
+        <TextBox>
+          <Typography
+            color={color.main}
+            fontSize={18}
+            style={{ fontWeight: 'bold' }}
+          >
+            JJAN
+          </Typography>
+        </TextBox>
+        <TextBox>
+          <Typography color={color.black} fontSize={18}>
+            에 오신 것을 환영합니다!
+          </Typography>
+        </TextBox>
       </Firstgreeting>
       <Introduce>
         <Typography color={color.black} fontSize={14}>
@@ -41,7 +46,7 @@ const Onboarding = () => {
       >
         오늘 하루도 짠-!
       </Typography>
-      <Link to="/">
+      <Link to="/" style={{ textDecoration: 'none' }}>
         <SignUpButton>
           <Button
             backgroundColor={color.main}
