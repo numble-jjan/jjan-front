@@ -9,10 +9,12 @@ export const Root = styled.section`
   }
 `;
 
+export const TextBox = styled.div`
+  display: inline-block;
+`;
+
 export const Firstgreeting = styled.div`
-  display: flex;
   margin-top: 44px;
-  margin-left: 14%;
 `;
 
 export const Introduce = styled.div`
