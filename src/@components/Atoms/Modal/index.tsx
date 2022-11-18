@@ -1,0 +1,69 @@
+import React from 'react';
+import styled from 'styled-components';
+
+import Typography from '../Typography';
+import Button from '../Button';
+
+import color from '@/styles/constants/color';
+import { btn1, btn3 } from '@/styles/constants/theme';
+
+interface Props {
+  message: string;
+  onClickDisagree: () => void;
+  onClickAgree: () => void;
+}
+
+const Modal = ({ message, onClickAgree, onClickDisagree }: Props) => {
+  return (
+    <Container>
+      <Floating>
+        <MessageBox>
+          <Typography fontSize={14}>{message}</Typography>
+        </MessageBox>
+        <SelectionContainer>
+          <Button style={btn3} onClick={onClickAgree}>
+            <Typography fontSize={14} color={color.purple}>
+              예
+            </Typography>
+          </Button>
+          <Button style={btn1} onClick={onClickDisagree}>
+            <Typography fontSize={14} color={color.white}>
+              아니요
+            </Typography>
+          </Button>
+        </SelectionContainer>
+      </Floating>
+    </Container>
+  );
+};
+export default Modal;
+
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 16px;
+`;
+const Floating = styled.div`
+  width: 328px;
+  height: 150px;
+  background-color: white;
+`;
+const MessageBox = styled.div`
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const SelectionContainer = styled.div`
+  width: 100%;
+  height: 50px;
+  display: flex;
+  & div {
+    width: 50%;
+  }
+`;
