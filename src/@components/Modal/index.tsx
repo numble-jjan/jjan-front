@@ -5,6 +5,7 @@ import Typography from '../Typography';
 import Button from '../Button';
 
 import color from '@/styles/constants/color';
+import { btn1, btn3 } from '@/styles/constants/theme';
 
 interface Props {
   message: string;
@@ -20,20 +21,15 @@ const Modal = ({ message, onClickAgree, onClickDisagree }: Props) => {
           <Typography fontSize={14}>{message}</Typography>
         </MessageBox>
         <SelectionContainer>
-          <Button
-            backgroundColor={color.white}
-            color={color.purple}
-            borderColor={color.purple}
-            onClick={onClickAgree}
-          >
-            예
+          <Button style={btn3} onClick={onClickAgree}>
+            <Typography fontSize={14} color={color.purple}>
+              예
+            </Typography>
           </Button>
-          <Button
-            backgroundColor={color.purple}
-            color={color.white}
-            onClick={onClickDisagree}
-          >
-            아니요
+          <Button style={btn1} onClick={onClickDisagree}>
+            <Typography fontSize={14} color={color.white}>
+              아니요
+            </Typography>
           </Button>
         </SelectionContainer>
       </Floating>
