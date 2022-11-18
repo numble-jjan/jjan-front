@@ -54,12 +54,20 @@ export const btn9 = {
   height: '50px',
 };
 
-export const fontSize = {
-  menubar: '10px',
-  xs: '11px',
-  s: '12px',
-  m: '13px',
-  content: '14px',
-  title: '16px',
-  header: '18px',
+export const font = {
+  size: {
+    menubar: '10px',
+    xs: '11px',
+    s: '12px',
+    m: '13px',
+    content: '14px',
+    title: '16px',
+    header: '18px',
+  },
+  weight: {
+    light: '100',
+    regular: 'normal',
+    medium: '500',
+    bold: 'bold',
+  },
 };
