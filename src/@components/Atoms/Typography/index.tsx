@@ -1,21 +1,14 @@
-import React from 'react';
-import { CSSProperties } from 'react';
-import { PropsWithChildren } from 'react';
-import styled from 'styled-components';
+import React, { CSSProperties, PropsWithChildren } from 'react';
+
+import * as Styled from './index.styles';
 
 interface Props extends PropsWithChildren {
   color?: string;
-  fontSize?: string;
-  fontWeight?: string;
+  fontSize?: number | string;
+  fontWeight?: number | string;
   style?: CSSProperties;
   onClick?: () => void;
 }
-
-const Root = styled.div<Props>`
-  ${props => `color: ${props.color};`}
-  ${props => `font-size: ${props.fontSize};`} 
-  ${props => `font-weight: ${props.fontWeight};`}
-`;
 
 const Typography = ({
   color,
@@ -26,7 +19,7 @@ const Typography = ({
   children,
 }: Props) => {
   return (
-    <Root
+    <Styled.Root
       color={color}
       fontSize={fontSize}
       fontWeight={fontWeight}
@@ -34,7 +27,7 @@ const Typography = ({
       onClick={onClick}
     >
       {children}
-    </Root>
+    </Styled.Root>
   );
 };
 
