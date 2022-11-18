@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Header from '@/@components/Header';
+import Layout from '@/@components/Layout';
 import Typography from '@/@components/Typography';
 import Button from '@/@components/Button';
 
@@ -10,7 +10,7 @@ import { btn2, btn4 } from '@/styles/constants/theme';
 
 const ProfileSetting = () => {
   const onClickPrev = () => {
-    console.warn('clicked');
+    //sample
   };
 
   const onClickSetLocation = () => {
@@ -20,37 +20,34 @@ const ProfileSetting = () => {
     //sample
   };
   return (
-    <div>
-      <Header title="프로필 설정" onClickPrev={onClickPrev} />
-      <Content>
-        <Introduction color={color.purple}>
-          <Typography fontSize={16}>
-            내 주변 술친구를 마주할
-            <br />
-            <span>프로필을 등록</span>해주세요.
+    <Layout headerTitle="프로필 설정" onClickPrev={onClickPrev}>
+      <Introduction color={color.purple}>
+        <Typography fontSize={16}>
+          내 주변 술친구를 마주할
+          <br />
+          <span>프로필을 등록</span>해주세요.
+        </Typography>
+      </Introduction>
+      <IconContainer>
+        <img src="icons/icon-profile-anonymous.svg" alt="프로필 사진" />
+        <CameraCircle backgroundColor={color.purple}>
+          <img src="icons/icon-camera.svg" alt="카메라" />
+        </CameraCircle>
+      </IconContainer>
+      {/** Input이 들어가는 자리 */}
+      <ButtonContainer>
+        <Button style={btn4} onClick={onClickSetLocation}>
+          <Typography color={color.purple} fontSize={13}>
+            활동지역 설정하기
           </Typography>
-        </Introduction>
-        <IconContainer>
-          <img src="icons/icon-profile-anonymous.svg" alt="프로필 사진" />
-          <CameraCircle backgroundColor={color.purple}>
-            <img src="icons/icon-camera.svg" alt="카메라" />
-          </CameraCircle>
-        </IconContainer>
-        {/** Input이 들어가는 자리 */}
-        <ButtonContainer>
-          <Button style={btn4} onClick={onClickSetLocation}>
-            <Typography color={color.purple} fontSize={13}>
-              활동지역 설정하기
-            </Typography>
-          </Button>
-          <Button style={btn2} onClick={onClickSetProfile}>
-            <Typography color={color.white} fontSize={13}>
-              프로필 설정하기
-            </Typography>
-          </Button>
-        </ButtonContainer>
-      </Content>
-    </div>
+        </Button>
+        <Button style={btn2} onClick={onClickSetProfile}>
+          <Typography color={color.white} fontSize={13}>
+            프로필 설정하기
+          </Typography>
+        </Button>
+      </ButtonContainer>
+    </Layout>
   );
 };
 export default ProfileSetting;
@@ -72,9 +69,6 @@ const Introduction = styled.p<IntroductionProps>`
   & span {
     color: ${({ color }) => color};
   }
-`;
-const Content = styled.div`
-  padding: 16px;
 `;
 const IconContainer = styled.div`
   position: relative;
