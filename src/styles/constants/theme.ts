@@ -53,3 +53,21 @@ export const btn9 = {
   borderColor: 'rgba(104, 60, 237, 0.3)',
   height: '50px',
 };
+
+export const font = {
+  size: {
+    menubar: '10px',
+    xs: '11px',
+    s: '12px',
+    m: '13px',
+    content: '14px',
+    title: '16px',
+    header: '18px',
+  },
+  weight: {
+    light: '100',
+    regular: 'normal',
+    medium: '500',
+    bold: 'bold',
+  },
+};

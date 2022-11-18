@@ -5,10 +5,10 @@ import './global.css';
 const GlobalStyle = createGlobalStyle`
   ${reset}
   
-  body {
+  * { 
+    box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;   
     font-style: normal;
-    font-weight: nomal;
   }
 `;
 
