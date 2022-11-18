@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 interface Props extends PropsWithChildren {
   color?: string;
-  fontSize: number | string;
+  fontSize?: number | string;
   fontWeight?: number | string;
   style?: CSSProperties;
   onClick?: () => void;
