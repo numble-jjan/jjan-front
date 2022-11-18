@@ -1,8 +1,55 @@
-export const fonts = {
-  size: {},
-  weight: {},
+import color from './color';
+
+export const btn1 = {
+  backgroundColor: `${color.purple}`,
+  border: '1px solid',
+  borderColor: `${color.purple}`,
+  height: '50px',
 };
 
-export const margin = {};
+export const btn2 = {
+  backgroundColor: `${color.purple}`,
+  height: '40px',
+};
 
-export const padding = {};
+export const btn3 = {
+  backgroundColor: `${color.white}`,
+  border: '1px solid',
+  borderColor: `${color.purple}`,
+  height: '50px',
+};
+
+export const btn4 = {
+  backgroundColor: `${color.white}`,
+  border: '1px solid',
+  borderColor: `${color.purple}`,
+  height: '40px',
+};
+
+export const btn5 = {
+  backgroundColor: 'rgba(104, 60, 237, 0.3)',
+  height: '50px',
+};
+
+export const btn6 = {
+  backgroundColor: 'rgba(104, 60, 237, 0.3)',
+  height: '40px',
+};
+
+export const btn7 = {
+  backgroundColor: `${color.dark_gray}`,
+  height: '27px',
+};
+
+export const btn8 = {
+  backgroundColor: `${color.white}`,
+  border: '1px solid',
+  borderColor: `${color.light_gray1}`,
+  height: '50px',
+};
+
+export const btn9 = {
+  border: '1px solid',
+  borderColor: 'rgba(104, 60, 237, 0.3)',
+  height: '50px',
+};
