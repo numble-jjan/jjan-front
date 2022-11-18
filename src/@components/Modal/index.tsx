@@ -20,8 +20,20 @@ const Modal = ({ message, onClickAgree, onClickDisagree }: Props) => {
           <Typography fontSize={14}>{message}</Typography>
         </MessageBox>
         <SelectionContainer>
-          <Button onClick={onClickAgree}>예</Button>
-          <Button onClick={onClickDisagree}>아니요</Button>
+          <Button
+            backgroundColor={color.white}
+            color={color.purple}
+            onClick={onClickAgree}
+          >
+            예
+          </Button>
+          <Button
+            backgroundColor={color.purple}
+            color={color.white}
+            onClick={onClickDisagree}
+          >
+            아니요
+          </Button>
         </SelectionContainer>
       </Floating>
     </Container>
