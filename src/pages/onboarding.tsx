@@ -18,7 +18,7 @@ const Onboarding = () => {
       <Firstgreeting>
         <TextBox>
           <Typography
-            color={color.main}
+            color={color.purple}
             fontSize={18}
             style={{ fontWeight: 'bold' }}
           >
@@ -40,7 +40,7 @@ const Onboarding = () => {
         </Typography>
       </Introduce>
       <Typography
-        color={color.main}
+        color={color.purple}
         fontSize={14}
         style={{ fontWeight: 'bold', marginTop: '30px' }}
       >
@@ -49,7 +49,7 @@ const Onboarding = () => {
       <Link to="/" style={{ textDecoration: 'none' }}>
         <SignUpButton>
           <Button
-            backgroundColor={color.main}
+            backgroundColor={color.purple}
             color={color.white}
             fontSize={14}
             width={290}
