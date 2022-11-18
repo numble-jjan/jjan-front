@@ -1,8 +1,7 @@
 import React from 'react';
 import { PropsWithChildren } from 'react';
 import { Typography } from '@/@components';
-import color from '@/styles/constants/color';
-import { font } from '@/styles/constants/theme';
+import { color, font } from '@/styles/theme';
 import * as Styled from './index.styles';
 
 interface Props extends PropsWithChildren {
