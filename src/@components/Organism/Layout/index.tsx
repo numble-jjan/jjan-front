@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 
-import Header from '../Header';
+import Header from '../../Molecule/Header';
 
 interface Props extends PropsWithChildren {
   headerTitle: string;
