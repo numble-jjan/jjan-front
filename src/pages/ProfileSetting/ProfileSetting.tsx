@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Layout from '@/@components/Layout';
-import Typography from '@/@components/Typography';
-import Button from '@/@components/Button';
+import Layout from '@/@components/Organism/Layout';
+import { Typography, Button } from '@/@components';
 
-import color from '@/styles/constants/color';
-import { btn2, btn4 } from '@/styles/constants/theme';
+import { btn2, btn4, color } from '@/styles/theme';
 
 const ProfileSetting = () => {
   const onClickPrev = () => {

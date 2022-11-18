@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '../@components';
-import { Typography } from '../@components';
+import { Button } from '../../@components';
+import { Typography } from '../../@components';
 import {
   Root,
   TextBox,
   Introduce,
   SignInButton,
-} from '../styles/signUpCompleted';
-import color from '../styles/constants/color';
+} from '../../styles/signUpCompleted';
+import { btn1, color, font } from '@/styles/theme';
 
 const Onboarding = () => {
   return (
@@ -39,15 +39,14 @@ const Onboarding = () => {
       <img id="box" src="/signUpCompleted.png" />
       <SignInButton>
         <Link to="/" style={{ textDecoration: 'none' }}>
-          <Button
-            backgroundColor={color.purple}
-            color={color.white}
-            fontSize={14}
-            width={290}
-            height={50}
-            fontWeight={'bold'}
-          >
-            로그인 하기
+          <Button style={btn1}>
+            <Typography
+              color={color.white}
+              fontSize={font.size.content}
+              fontWeight={font.weight.bold}
+            >
+              로그인 하기
+            </Typography>
           </Button>
         </Link>
       </SignInButton>
