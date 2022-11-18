@@ -1,33 +1,38 @@
 import React from 'react';
+import { CSSProperties } from 'react';
+import { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 
-type Props = {
+interface Props extends PropsWithChildren {
   color?: string;
-  fontSize: number;
-  children: any;
-  style?: any;
+  fontSize: number | string;
+  fontWeight?: number | string;
+  style?: CSSProperties;
   onClick?: () => void;
-};
+}
 
-type RootProps = {
-  color?: string;
-  fontSize: number;
-};
-
-const Root = styled.div<RootProps>`
+const Root = styled.div<Props>`
   ${props => `color: ${props.color};`}
-  ${props => `font-size: ${props.fontSize}px;`}
+  ${props => `font-size: ${props.fontSize}px;`} 
+  ${props => `font-weight: ${props.fontWeight};`}
 `;
 
-const Typography: React.FC<Props> = ({
+const Typography = ({
   color,
   fontSize,
-  children,
+  fontWeight,
   style,
   onClick,
-}) => {
+  children,
+}: Props) => {
   return (
-    <Root color={color} fontSize={fontSize} style={style} onClick={onClick}>
+    <Root
+      color={color}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+      style={style}
+      onClick={onClick}
+    >
       {children}
     </Root>
   );
