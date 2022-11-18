@@ -3,15 +3,15 @@ import styled from 'styled-components';
 import Typography from '../Typography';
 
 interface Props {
-  onClick: () => void;
+  onClickPrev: () => void;
   title: string;
 }
 
-const Header = ({ title, onClick }: Props) => {
+const Header = ({ title, onClickPrev }: Props) => {
   return (
     <Container>
-      <IconWrapper onClick={onClick}>
-        <img src="icons/prev.svg" alt="이전으로 가기" />
+      <IconWrapper onClick={onClickPrev}>
+        <img src="icons/icon-prev.svg" alt="이전으로 가기" />
       </IconWrapper>
       <Typography fontSize={18}>{title}</Typography>
     </Container>
