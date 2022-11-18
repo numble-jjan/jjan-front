@@ -1,34 +1,18 @@
 import React from 'react';
 import { PropsWithChildren } from 'react';
-import styled from 'styled-components';
 import { Typography } from '@/@components';
 import color from '@/styles/constants/color';
 import { font } from '@/styles/constants/theme';
+import * as Styled from './index.styles';
 
 interface Props extends PropsWithChildren {
   type?: 'default' | 'essential';
 }
 
-const Root = styled.div`
-  width: 100%;
-  padding-bottom: 10px;
-  border-bottom: 1px solid black;
-`;
-
-const Title = styled.div`
-  display: inline-block;
-`;
-
-const Essential = styled.div`
-  margin-top: 2px;
-  display: inline-block;
-  float: right;
-`;
-
 const TitleBar = ({ type, children }: Props) => {
   return type === 'essential' ? (
-    <Root>
-      <Title>
+    <Styled.Root>
+      <Styled.Title>
         <Typography
           color={color.black}
           fontSize={font.size.title}
@@ -36,8 +20,8 @@ const TitleBar = ({ type, children }: Props) => {
         >
           {children}
         </Typography>
-      </Title>
-      <Essential>
+      </Styled.Title>
+      <Styled.Essential>
         <Typography
           color={color.black}
           fontSize={font.size.s}
@@ -45,8 +29,8 @@ const TitleBar = ({ type, children }: Props) => {
         >
           필수사항
         </Typography>
-      </Essential>
-      <Essential>
+      </Styled.Essential>
+      <Styled.Essential>
         <Typography
           color={color.purple}
           fontSize={font.size.s}
@@ -54,11 +38,11 @@ const TitleBar = ({ type, children }: Props) => {
         >
           *
         </Typography>
-      </Essential>
-    </Root>
+      </Styled.Essential>
+    </Styled.Root>
   ) : (
-    <Root>
-      <Title>
+    <Styled.Root>
+      <Styled.Title>
         <Typography
           color={color.black}
           fontSize={font.size.title}
@@ -66,8 +50,8 @@ const TitleBar = ({ type, children }: Props) => {
         >
           {children}
         </Typography>
-      </Title>
-    </Root>
+      </Styled.Title>
+    </Styled.Root>
   );
 };
 
