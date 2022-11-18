@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Typography from '../Typography';
+import Button from '../Button';
+
+import color from '@/styles/constants/color';
 
 interface Props {
   message: string;
@@ -17,8 +20,8 @@ const Modal = ({ message, onClickAgree, onClickDisagree }: Props) => {
           <Typography fontSize={14}>{message}</Typography>
         </MessageBox>
         <SelectionContainer>
-          <SelectionButton onClick={onClickAgree}>예</SelectionButton>
-          <SelectionButton onClick={onClickDisagree}>아니요</SelectionButton>
+          <Button onClick={onClickAgree}>예</Button>
+          <Button onClick={onClickDisagree}>아니요</Button>
         </SelectionContainer>
       </Floating>
     </Container>
@@ -46,8 +49,4 @@ const MessageBox = styled.div`
 const SelectionContainer = styled.div`
   width: 100%;
   height: 50px;
-`;
-const SelectionButton = styled.button`
-  width: 50%;
-  height: 100%;
 `;
