@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as Styled from './index.styles';
-import { Typography } from '../../index';
+import { Typography } from '@/@components';
 
 interface Props {
   children: string;

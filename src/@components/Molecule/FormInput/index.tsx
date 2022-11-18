@@ -2,7 +2,7 @@ import React, { InputHTMLAttributes } from 'react';
 import { UseFormRegisterReturn } from 'react-hook-form';
 import styled from 'styled-components';
 
-import { Input, Lable, Message } from '../../index';
+import { Input, Lable, Message } from '@/@components';
 
 import { InputType } from '@/@types/inputType';
 

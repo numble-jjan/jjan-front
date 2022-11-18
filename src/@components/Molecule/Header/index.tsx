@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as Styled from './index.styles';
-import Typography from '../../Atoms/Typography';
+import { Typography } from '@/@components';
 
 interface Props {
   onClickPrev: () => void;

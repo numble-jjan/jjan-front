@@ -1,9 +1,9 @@
 import React from 'react';
 
 import * as Styled from './index.styles';
-import { Typography } from '../../index';
+import { Typography } from '@/@components';
 
-import color from '../../../styles/constants/color';
+import { color } from '@/styles/theme';
 
 interface Props {
   children: string;

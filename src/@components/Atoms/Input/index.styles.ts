@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import color from '@/styles/constants/color';
+import { color } from '@/styles/theme';
 
 export const StyledInput = styled.input<{ isValid?: boolean }>`
   width: 100%;
