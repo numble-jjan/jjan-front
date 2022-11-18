@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RecoilRoot } from 'recoil';
-import App from './App';
 import styled from 'styled-components';
+
+import App from './App';
+
 import GlobalStyle from './styles/GlobalStyle';
-import GlobalFonts from './styles/GlobalFonts';
 
 const IndexPageWrapper = styled.div`
   width: 320px;
@@ -20,7 +21,6 @@ root.render(
     <RecoilRoot>
       <IndexPageWrapper>
         <GlobalStyle />
-        <GlobalFonts />
         <App />
       </IndexPageWrapper>
     </RecoilRoot>
