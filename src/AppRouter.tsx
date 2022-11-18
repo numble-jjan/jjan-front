@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Onboarding from './pages/OnBoarding/onboarding';
-import ProfileSetting from './pages/ProfileSetting/ProfileSetting';
-import SignUpCompleted from './pages/SignUpCompleted/signUpCompleted';
+import Onboarding from './pages/OnBoarding';
+import ProfileSetting from './pages/ProfileSetting';
+import SignUpCompleted from './pages/SignUpCompleted';
 
 const AppRouter = () => {
   return (
