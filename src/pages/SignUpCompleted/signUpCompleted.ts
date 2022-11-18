@@ -20,9 +20,9 @@ export const TextBox = styled.div`
 export const Introduce = styled.div`
   margin-top: 16px;
   line-height: 20px;
-  font-weight: 500; 
-  margin-left : auto 
-  margin-right : auto
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const SignInButton = styled.div`

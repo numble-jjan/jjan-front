@@ -1,17 +1,17 @@
 import React from 'react';
 
 import * as Styled from './index.styles';
-import Typography from '../../Atoms/Typography';
+import { Typography } from '@/@components';
 
 interface Props {
-  onClick: () => void;
+  onClickPrev: () => void;
   title: string;
 }
 
-const Header = ({ title, onClick }: Props) => {
+const Header = ({ title, onClickPrev }: Props) => {
   return (
     <Styled.Container>
-      <Styled.IconWrapper onClick={onClick}>
+      <Styled.IconWrapper onClick={onClickPrev}>
         <img src="icons/prev.svg" alt="이전으로 가기" />
       </Styled.IconWrapper>
       <Typography fontSize={18}>{title}</Typography>

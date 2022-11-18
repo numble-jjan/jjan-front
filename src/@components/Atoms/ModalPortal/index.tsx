@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Backdrop } from '../index';
+import { Backdrop } from '@/@components';
 
 interface Props {
   children: JSX.Element;

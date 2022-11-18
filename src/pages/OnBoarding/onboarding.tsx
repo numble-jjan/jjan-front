@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '../@components';
-import { Typography } from '../@components';
+import { Button, Typography } from '../../@components';
+
 import {
   Root,
   TextBox,
   Firstgreeting,
   Introduce,
   SignUpButton,
-} from '../styles/onboarding';
-import color from '../styles/constants/color';
+} from './onboarding';
+import { btn1, color, font } from '../../styles/theme';
 
 const Onboarding = () => {
   return (
@@ -26,16 +26,16 @@ const Onboarding = () => {
           </Typography>
         </TextBox>
         <TextBox>
-          <Typography color={color.black} fontSize={18}>
+          <Typography color={color.black} fontSize={font.size.header}>
             에 오신 것을 환영합니다!
           </Typography>
         </TextBox>
       </Firstgreeting>
       <Introduce>
-        <Typography color={color.black} fontSize={14}>
+        <Typography color={color.black} fontSize={font.size.content}>
           같이 한잔 할 친구가 필요하신가요?
         </Typography>
-        <Typography color={color.black} fontSize={14}>
+        <Typography color={color.black} fontSize={font.size.content}>
           내 주변에서 찾아보세요!
         </Typography>
       </Introduce>
@@ -48,15 +48,13 @@ const Onboarding = () => {
       </Typography>
       <Link to="/" style={{ textDecoration: 'none' }}>
         <SignUpButton>
-          <Button
-            backgroundColor={color.purple}
-            color={color.white}
-            fontSize={14}
-            width={290}
-            height={50}
-            fontWeight={'bold'}
-          >
-            JJAN 회원가입
+          <Button style={btn1}>
+            <Typography
+              fontSize={font.size.content}
+              fontWeight={font.weight.bold}
+            >
+              JJAN 회원가입
+            </Typography>
           </Button>
         </SignUpButton>
       </Link>

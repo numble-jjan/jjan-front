@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Typography from '../Typography';
-import Button from '../Button';
+import { Typography, Button } from '@/@components';
 
-import color from '@/styles/constants/color';
-import { btn1, btn3 } from '@/styles/constants/theme';
+import { btn1, btn3, color } from '@/styles/theme';
 
 interface Props {
   message: string;
