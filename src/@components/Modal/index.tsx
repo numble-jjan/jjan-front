@@ -23,6 +23,7 @@ const Modal = ({ message, onClickAgree, onClickDisagree }: Props) => {
           <Button
             backgroundColor={color.white}
             color={color.purple}
+            borderColor={color.purple}
             onClick={onClickAgree}
           >
             예
@@ -48,6 +49,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  padding: 16px;
 `;
 const Floating = styled.div`
   width: 328px;
@@ -57,8 +59,15 @@ const Floating = styled.div`
 const MessageBox = styled.div`
   width: 100%;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 const SelectionContainer = styled.div`
   width: 100%;
   height: 50px;
+  display: flex;
+  & div {
+    width: 50%;
+  }
 `;
