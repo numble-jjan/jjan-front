@@ -57,7 +57,7 @@ interface IntroductionProps {
   color: string;
 }
 
-const Introduction = styled.p<IntroductionProps>`
+const Introduction = styled.div<IntroductionProps>`
   display: flex;
   justify-content: center;
   align-items: center;

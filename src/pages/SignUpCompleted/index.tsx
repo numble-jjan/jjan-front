@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Button, Typography } from '../../@components';
 
-import { Root, TextBox, Introduce, SignInButton } from './signUpCompleted';
+import { Root, TextBox, Introduce, SignInButton } from './index.styles';
 import { btn1, color, font } from '../../styles/theme';
 
 const Onboarding = () => {
