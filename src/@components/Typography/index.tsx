@@ -5,15 +5,15 @@ import styled from 'styled-components';
 
 interface Props extends PropsWithChildren {
   color?: string;
-  fontSize?: number | string;
-  fontWeight?: number | string;
+  fontSize?: string;
+  fontWeight?: string;
   style?: CSSProperties;
   onClick?: () => void;
 }
 
 const Root = styled.div<Props>`
   ${props => `color: ${props.color};`}
-  ${props => `font-size: ${props.fontSize}px;`} 
+  ${props => `font-size: ${props.fontSize};`} 
   ${props => `font-weight: ${props.fontWeight};`}
 `;
 
