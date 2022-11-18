@@ -1,41 +1,57 @@
 import React from 'react';
-import styled from 'styled-components';
+import { PropsWithChildren } from 'react';
+import { Typography } from '@/@components';
+import color from '@/styles/constants/color';
+import { font } from '@/styles/constants/theme';
+import * as Styled from './index.styles';
 
-type Props = {
-  children: string;
+interface Props extends PropsWithChildren {
   type?: 'default' | 'essential';
-};
+}
 
-const Root = styled.div`
-  width: 90%;
-  padding-bottom: 10px;
-  border-bottom: 1px solid black;
-`;
-
-const Title = styled.div`
-  font-size: 16px;
-  font-weight: 500;
-  display: inline-block;
-`;
-
-const Essential = styled.div`
-  font-size: 12px;
-  font-weight: 500;
-  margin-top: 2px;
-  display: inline-block;
-  float: right;
-`;
-
-const TitleBar: React.FC<Props> = ({ children, type }) => {
+const TitleBar = ({ type, children }: Props) => {
   return type === 'essential' ? (
-    <Root>
-      <Title>{children}</Title>
-      <Essential>필수사항</Essential>
-    </Root>
+    <Styled.Root>
+      <Styled.Title>
+        <Typography
+          color={color.black}
+          fontSize={font.size.title}
+          fontWeight={font.weight.medium}
+        >
+          {children}
+        </Typography>
+      </Styled.Title>
+      <Styled.Essential>
+        <Typography
+          color={color.black}
+          fontSize={font.size.s}
+          fontWeight={font.weight.medium}
+        >
+          필수사항
+        </Typography>
+      </Styled.Essential>
+      <Styled.Essential>
+        <Typography
+          color={color.purple}
+          fontSize={font.size.s}
+          fontWeight={font.weight.medium}
+        >
+          *
+        </Typography>
+      </Styled.Essential>
+    </Styled.Root>
   ) : (
-    <Root>
-      <Title>{children}</Title>
-    </Root>
+    <Styled.Root>
+      <Styled.Title>
+        <Typography
+          color={color.black}
+          fontSize={font.size.title}
+          fontWeight={font.weight.medium}
+        >
+          {children}
+        </Typography>
+      </Styled.Title>
+    </Styled.Root>
   );
 };
 
