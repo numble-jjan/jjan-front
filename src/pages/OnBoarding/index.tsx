@@ -8,7 +8,7 @@ import {
   Firstgreeting,
   Introduce,
   SignUpButton,
-} from './onboarding';
+} from './index.styles';
 import { btn1, color, font } from '../../styles/theme';
 
 const Onboarding = () => {
