@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '../../@components';
-import { Typography } from '../../@components';
-import {
-  Root,
-  TextBox,
-  Introduce,
-  SignInButton,
-} from '../../styles/signUpCompleted';
-import { btn1, color, font } from '@/styles/theme';
+
+import { Button, Typography } from '../../@components';
+
+import { Root, TextBox, Introduce, SignInButton } from './signUpCompleted';
+import { btn1, color, font } from '../../styles/theme';
 
 const Onboarding = () => {
   return (

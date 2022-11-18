@@ -8,8 +8,8 @@ import {
   Firstgreeting,
   Introduce,
   SignUpButton,
-} from '../../styles/onboarding';
-import { btn1, color, font } from '@/styles/theme';
+} from './onboarding';
+import { btn1, color, font } from '../../styles/theme';
 
 const Onboarding = () => {
   return (
