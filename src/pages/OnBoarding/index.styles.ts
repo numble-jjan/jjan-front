@@ -2,11 +2,15 @@ import styled from 'styled-components';
 
 export const Root = styled.section`
   text-align: center;
+  padding: 16px;
   img {
     margin-top: 150px;
     width: 86.06px;
     height: 90px;
   }
+`;
+export const ButtonContainer = styled.div`
+  margin-top: 50px;
 `;
 
 export const TextBox = styled.div`
@@ -20,10 +24,4 @@ export const Firstgreeting = styled.div`
 export const Introduce = styled.div`
   margin-top: 14px;
   line-height: 20px;
-  font-weight: 500;
-`;
-
-export const SignUpButton = styled.div`
-  margin-left: 15px;
-  margin-top: 50px;
 `;

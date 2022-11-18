@@ -1,32 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Typography } from '../../@components';
+import { Button, Typography } from '@/@components';
 
 import {
   Root,
+  ButtonContainer,
   TextBox,
   Firstgreeting,
   Introduce,
-  SignUpButton,
 } from './index.styles';
-import { btn1, color, font } from '../../styles/theme';
+import { btn1, color, font } from '@/styles/theme';
 
 const Onboarding = () => {
   return (
     <Root>
-      <img src="/logo.png" />
+      <img src="/logo.svg" />
       <Firstgreeting>
         <TextBox>
           <Typography
             color={color.purple}
-            fontSize={18}
-            style={{ fontWeight: 'bold' }}
+            fontSize={font.size.header}
+            fontWeight={font.weight.bold}
           >
             JJAN
           </Typography>
         </TextBox>
         <TextBox>
-          <Typography color={color.black} fontSize={font.size.header}>
+          <Typography
+            color={color.black}
+            fontSize={font.size.header}
+            fontWeight={font.weight.bold}
+          >
             에 오신 것을 환영합니다!
           </Typography>
         </TextBox>
@@ -41,22 +45,25 @@ const Onboarding = () => {
       </Introduce>
       <Typography
         color={color.purple}
-        fontSize={14}
-        style={{ fontWeight: 'bold', marginTop: '30px' }}
+        fontSize={font.size.content}
+        fontWeight={font.weight.bold}
+        style={{ marginTop: '30px' }}
       >
         오늘 하루도 짠-!
       </Typography>
+
       <Link to="/" style={{ textDecoration: 'none' }}>
-        <SignUpButton>
+        <ButtonContainer>
           <Button style={btn1}>
             <Typography
+              color={color.white}
               fontSize={font.size.content}
               fontWeight={font.weight.bold}
             >
               JJAN 회원가입
             </Typography>
           </Button>
-        </SignUpButton>
+        </ButtonContainer>
       </Link>
     </Root>
   );
