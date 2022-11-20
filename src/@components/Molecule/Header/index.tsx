@@ -12,7 +12,7 @@ const Header = ({ title, onClickPrev }: Props) => {
   return (
     <Styled.Container>
       <Styled.IconWrapper onClick={onClickPrev}>
-        <img src="icons/prev.svg" alt="이전으로 가기" />
+        <img src="icons/icon-prev.svg" alt="이전으로 가기" />
       </Styled.IconWrapper>
       <Typography fontSize={18}>{title}</Typography>
     </Styled.Container>

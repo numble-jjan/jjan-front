@@ -3,6 +3,8 @@ import React from 'react';
 import * as Styled from './index.styles';
 import { Typography } from '@/@components';
 
+import { color, font } from '@/styles/theme';
+
 interface Props {
   children: string;
 }
@@ -11,10 +13,10 @@ const Lable = ({ children }: Props) => {
   return (
     <Styled.LableWrapper>
       <Typography
-        fontSize={13}
+        color={color.black}
+        fontSize={font.size.m}
+        fontWeight={font.weight.medium}
         style={{
-          fontWeight: '400',
-          lineHeight: '19px',
           letterSpacing: '-0.4px',
         }}
       >

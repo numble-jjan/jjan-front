@@ -3,27 +3,28 @@ import React from 'react';
 import * as Styled from './index.styles';
 import { Typography } from '@/@components';
 
-import { color } from '@/styles/theme';
+import { font } from '@/styles/theme';
 
 interface Props {
   children: string;
+  color: string;
 }
 
-const Lable = ({ children }: Props) => {
+const Message = ({ children, color }: Props) => {
   return (
-    <Styled.LableWrapper>
+    <Styled.MessageWrapper>
       <Typography
-        fontSize={11}
-        color={color.orange}
+        color={color}
+        fontSize={font.size.s}
+        fontWeight={font.weight.medium}
         style={{
-          fontWeight: '400',
           letterSpacing: '-0.28px',
         }}
       >
         {children}
       </Typography>
-    </Styled.LableWrapper>
+    </Styled.MessageWrapper>
   );
 };
 
-export default Lable;
+export default Message;
