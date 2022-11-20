@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { Input, Lable, Message } from '@/@components';
 
 import { InputType } from '@/@types/inputType';
+import { color } from '@/styles/theme';
 
 interface IProps extends InputHTMLAttributes<HTMLInputElement> {
   lable: string;
@@ -38,9 +39,11 @@ const FormInput = ({
         required={required}
         {...register}
       />
-      {!isValid && errorMessage && <Message>{errorMessage}</Message>}
+      {!isValid && errorMessage && (
+        <Message color={color.orange}>{errorMessage}</Message>
+      )}
       {isValid && isTouched && confirmMessage && (
-        <Message>{confirmMessage}</Message>
+        <Message color={color.purple}>{confirmMessage}</Message>
       )}
     </Container>
   );
