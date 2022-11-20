@@ -25,10 +25,6 @@ const index = () => {
     formState: { errors },
   } = useForm<FormData>();
 
-  const onClickPrev = () => {
-    //sample
-  };
-
   const emailRegister = {
     required: '이메일을 입력해주세요.',
     pattern: {
@@ -56,7 +52,7 @@ const index = () => {
   };
 
   return (
-    <Layout headerTitle="회원 가입" onClickPrev={onClickPrev}>
+    <Layout headerTitle="회원 가입">
       <TitleBar type="essential">회원 정보</TitleBar>
       <FormContainer>
         <FormInput
