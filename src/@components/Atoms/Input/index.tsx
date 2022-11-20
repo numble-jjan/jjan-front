@@ -1,29 +1,16 @@
-import React, { forwardRef, InputHTMLAttributes } from 'react';
+import React, { forwardRef } from 'react';
 
 import * as Styled from './index.styles';
 
-import { InputType } from '../../../@types/inputType';
+import type { InputType } from '@/@types/inputType';
 
-export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   type: InputType;
-  isValid?: boolean;
 }
 
-const Input = forwardRef<HTMLInputElement, InputProps>(
-  (
-    { name, placeholder, type, isValid, ...props }: InputProps,
-    ref?: React.Ref<HTMLInputElement>,
-  ) => {
-    return (
-      <Styled.StyledInput
-        ref={ref}
-        name={name}
-        placeholder={placeholder}
-        type={type}
-        isValid={isValid}
-        {...props}
-      />
-    );
+const Input = forwardRef<HTMLInputElement, Props>(
+  ({ type, ...props }: Props, ref?: React.Ref<HTMLInputElement>) => {
+    return <Styled.Input type={type} ref={ref} {...props} />;
   },
 );
 
