@@ -8,10 +8,6 @@ import { btn2, btn4, color } from '@/styles/theme';
 import ProfileIcon from '@/@components/Molecule/ProfileIcon';
 
 const ProfileSetting = () => {
-  const onClickPrev = () => {
-    //sample
-  };
-
   const onClickSetLocation = () => {
     //sample
   };
@@ -20,7 +16,7 @@ const ProfileSetting = () => {
   };
   return (
     <div>
-      <Header onClickPrev={onClickPrev} title="프로필 설정" />
+      <Header title="프로필 설정" />
       <Content>
         <GuideTitle>내 주변 술친구를 마주할 프로필을 등록해주세요.</GuideTitle>
         <ProfileIcon extended={true} />
