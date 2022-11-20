@@ -10,5 +10,6 @@ export { default as Typography } from './Atoms/Typography';
 export { default as FormInput } from './Molecule/FormInput';
 export { default as Header } from './Molecule/Header';
 export { default as TitleBar } from './Molecule/TitleBar';
+export { default as GuideTitle } from './Molecule/GuideTitle';
 
 export { default as Layout } from './Organism/Layout';
