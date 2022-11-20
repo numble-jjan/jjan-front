@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Layout from '@/@components/Organism/Layout';
+import { Header } from '@/@components';
 import { Typography, Button } from '@/@components';
 
 import { btn2, btn4, color } from '@/styles/theme';
@@ -18,38 +18,44 @@ const ProfileSetting = () => {
     //sample
   };
   return (
-    <Layout headerTitle="프로필 설정" onClickPrev={onClickPrev}>
-      <Introduction color={color.purple}>
-        <Typography fontSize={16}>
-          내 주변 술친구를 마주할
-          <br />
-          <span>프로필을 등록</span>해주세요.
-        </Typography>
-      </Introduction>
-      <IconContainer>
-        <img src="icons/icon-profile-anonymous.svg" alt="프로필 사진" />
-        <CameraCircle backgroundColor={color.purple}>
-          <img src="icons/icon-camera.svg" alt="카메라" />
-        </CameraCircle>
-      </IconContainer>
-      {/** Input이 들어가는 자리 */}
-      <ButtonContainer>
-        <Button style={btn4} onClick={onClickSetLocation}>
-          <Typography color={color.purple} fontSize={13}>
-            활동지역 설정하기
+    <div>
+      <Header onClickPrev={onClickPrev} title="프로필 설정" />
+      <Content>
+        <Introduction color={color.purple}>
+          <Typography fontSize={16}>
+            내 주변 술친구를 마주할
+            <br />
+            <span>프로필을 등록</span>해주세요.
           </Typography>
-        </Button>
-        <Button style={btn2} onClick={onClickSetProfile}>
-          <Typography color={color.white} fontSize={13}>
-            프로필 설정하기
-          </Typography>
-        </Button>
-      </ButtonContainer>
-    </Layout>
+        </Introduction>
+        <IconContainer>
+          <img src="icons/icon-profile-anonymous.svg" alt="프로필 사진" />
+          <CameraCircle backgroundColor={color.purple}>
+            <img src="icons/icon-camera.svg" alt="카메라" />
+          </CameraCircle>
+        </IconContainer>
+        {/** Input이 들어가는 자리 */}
+        <ButtonContainer>
+          <Button style={btn4} onClick={onClickSetLocation}>
+            <Typography color={color.purple} fontSize={13}>
+              활동지역 설정하기
+            </Typography>
+          </Button>
+          <Button style={btn2} onClick={onClickSetProfile}>
+            <Typography color={color.white} fontSize={13}>
+              프로필 설정하기
+            </Typography>
+          </Button>
+        </ButtonContainer>
+      </Content>
+    </div>
   );
 };
 export default ProfileSetting;
 
+const Content = styled.div`
+  padding: 16px;
+`;
 interface CameraCircleProps {
   backgroundColor: string;
 }
