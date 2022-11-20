@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Header } from '@/@components';
-import { Typography, Button } from '@/@components';
+import { Typography, Button, GuideTitle } from '@/@components';
 
 import { btn2, btn4, color } from '@/styles/theme';
 
@@ -21,13 +21,7 @@ const ProfileSetting = () => {
     <div>
       <Header onClickPrev={onClickPrev} title="프로필 설정" />
       <Content>
-        <Introduction color={color.purple}>
-          <Typography fontSize={16}>
-            내 주변 술친구를 마주할
-            <br />
-            <span>프로필을 등록</span>해주세요.
-          </Typography>
-        </Introduction>
+        <GuideTitle>내 주변 술친구를 마주할 프로필을 등록해주세요.</GuideTitle>
         <IconContainer>
           <img src="icons/icon-profile-anonymous.svg" alt="프로필 사진" />
           <CameraCircle backgroundColor={color.purple}>
@@ -59,21 +53,6 @@ const Content = styled.div`
 interface CameraCircleProps {
   backgroundColor: string;
 }
-interface IntroductionProps {
-  color: string;
-}
-
-const Introduction = styled.div<IntroductionProps>`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  & span {
-    color: ${({ color }) => color};
-  }
-`;
 const IconContainer = styled.div`
   position: relative;
   display: flex;
