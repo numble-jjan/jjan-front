@@ -21,12 +21,8 @@ const index = () => {
     formState: { errors },
   } = useForm<FormData>({ resolver: yupResolver(schema) });
 
-  const onClickPrev = () => {
-    //sample
-  };
-
   return (
-    <Layout headerTitle="회원 가입" onClickPrev={onClickPrev}>
+    <Layout headerTitle="회원 가입">
       <TitleBar type="essential">회원 정보</TitleBar>
       <Styled.FormContainer>
         <FormInput

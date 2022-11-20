@@ -20,12 +20,8 @@ const index = () => {
     formState: { errors },
   } = useForm<FormData>({ resolver: yupResolver(schema) });
 
-  const onClickPrev = () => {
-    //sample
-  };
-
   return (
-    <Layout headerTitle="로그인" onClickPrev={onClickPrev}>
+    <Layout headerTitle="로그인">
       <Styled.FormContainer>
         <FormInput
           lable="이메일"

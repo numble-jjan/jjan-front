@@ -5,13 +5,12 @@ import { Header } from '@/@components';
 
 interface Props extends PropsWithChildren {
   headerTitle: string;
-  onClickPrev: () => void;
 }
 
-const Layout = ({ headerTitle, onClickPrev, children }: Props) => {
+const Layout = ({ headerTitle, children }: Props) => {
   return (
     <div>
-      <Header title={headerTitle} onClickPrev={onClickPrev} />
+      <Header title={headerTitle} />
       <Content>{children}</Content>
     </div>
   );
