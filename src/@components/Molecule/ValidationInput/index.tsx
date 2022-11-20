@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import { InputReplace } from '@/@components';
 import * as Styled from './index.styles';
@@ -11,11 +11,16 @@ export interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   ref?: React.Ref<HTMLInputElement>;
 }
 
-const ValidationInput = ({ type, isValid, ref, ...props }: Props) => {
-  return (
-    <Styled.Container isValid={isValid}>
-      <InputReplace type={type} ref={ref} {...props} />
-    </Styled.Container>
-  );
-};
+const ValidationInput = forwardRef<HTMLInputElement, Props>(
+  ({ type, isValid, ...props }: Props, ref) => {
+    return (
+      <Styled.Container isValid={isValid}>
+        <InputReplace type={type} ref={ref} {...props} />
+      </Styled.Container>
+    );
+  },
+);
+
+ValidationInput.displayName = 'ValidationInput';
+
 export default ValidationInput;
