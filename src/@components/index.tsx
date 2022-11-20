@@ -2,7 +2,6 @@ export { default as Backdrop } from './Atoms/Backdrop';
 export { default as Button } from './Atoms/Button';
 export { default as Card } from './Atoms/Card';
 export { default as Input } from './Atoms/Input';
-export { default as InputReplace } from './Atoms/InputReplace';
 export { default as Lable } from './Atoms/Lable';
 export { default as ListItem } from './Atoms/ListItem';
 export { default as Message } from './Atoms/Message';

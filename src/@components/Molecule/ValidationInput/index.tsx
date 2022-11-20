@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 
-import { InputReplace } from '@/@components';
+import { Input } from '@/@components';
 import * as Styled from './index.styles';
 
 import { InputType } from '@/@types/inputType';
@@ -15,7 +15,7 @@ const ValidationInput = forwardRef<HTMLInputElement, Props>(
   ({ type, isValid, ...props }: Props, ref) => {
     return (
       <Styled.Container isValid={isValid}>
-        <InputReplace type={type} ref={ref} {...props} />
+        <Input type={type} ref={ref} {...props} />
       </Styled.Container>
     );
   },

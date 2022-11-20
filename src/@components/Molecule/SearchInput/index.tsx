@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { InputReplace } from '@/@components';
+import { Input } from '@/@components';
 import * as Styled from './index.styles';
 
 import { InputType } from '@/@types/inputType';
@@ -15,7 +15,7 @@ const SearchInput = ({ type, ref, icon, ...props }: Props) => {
   const Icon = icon || 'svg';
   return (
     <Styled.Container>
-      <InputReplace type={type} ref={ref} {...props} />
+      <Input type={type} ref={ref} {...props} />
       <Icon />
     </Styled.Container>
   );
