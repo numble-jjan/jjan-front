@@ -1,14 +1,12 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
 
 import { FormInput, Button, Layout, Typography } from '@/@components';
 
 import { btn1, color, font } from '@/styles/theme';
 import * as Styled from './index.styles';
-
-const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$/i;
-const passwordRegex =
-  /^(?=.*[A-Za-z])(?=.*d)(?=.*[$@$!%*#?&])[A-Za-zd$@$!%*#?&]{8,}$/;
+import { schema } from '@/constants/validationSchema';
 
 type FormData = {
   email: string;
@@ -19,29 +17,11 @@ const index = () => {
   const {
     register,
     handleSubmit,
-    // setError,
     formState: { errors },
-  } = useForm<FormData>();
+  } = useForm<FormData>({ resolver: yupResolver(schema) });
 
   const onClickPrev = () => {
     //sample
-  };
-
-  const emailRegister = {
-    required: '이메일을 입력해주세요.',
-    pattern: {
-      value: emailRegex,
-      message: '이메일 주소를 다시 확인해주세요.',
-    },
-  };
-
-  const passwordRegister = {
-    required: '비밀번호를 입력해주세요.',
-    pattern: {
-      value: passwordRegex,
-      message:
-        '비밀번호는 최소 8자 이상의 영문자, 숫자, 특수문자 조합을 입력해야 합니다.',
-    },
   };
 
   return (
@@ -52,7 +32,7 @@ const index = () => {
           placeholder="이메일 주소"
           isValid={!errors.email?.message}
           type="text"
-          register={register('email', emailRegister)}
+          register={register('email')}
           errorMessage={errors.email && String(errors.email.message)}
         />
         <FormInput
@@ -60,7 +40,7 @@ const index = () => {
           placeholder="영문 대소문자, 숫자, !@#$%^&*"
           isValid={!errors.password?.message}
           type="password"
-          register={register('password', passwordRegister)}
+          register={register('password')}
           errorMessage={errors.password && String(errors.password.message)}
         />
       </Styled.FormContainer>
