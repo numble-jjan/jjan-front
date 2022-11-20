@@ -64,6 +64,14 @@ export const btn9 = {
   height: '50px',
 };
 
+export const btn10 = {
+  backgroundColor: `${color.white}`,
+  border: '1px solid',
+  borderColor: `${color.purple}`,
+  height: '50px',
+  filter: 'drop-shadow(0px 10px 20px rgba(104, 60, 237, 0.16))',
+};
+
 export const font = {
   size: {
     menubar: '10px',
