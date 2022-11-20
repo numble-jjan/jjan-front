@@ -2,7 +2,7 @@ import React, { InputHTMLAttributes } from 'react';
 import { UseFormRegisterReturn } from 'react-hook-form';
 import styled from 'styled-components';
 
-import { Input, Lable, Message } from '@/@components';
+import { ValidationInput, Lable, Message } from '@/@components';
 
 import { InputType } from '@/@types/inputType';
 import { color } from '@/styles/theme';
@@ -32,7 +32,7 @@ const FormInput = ({
   return (
     <Container>
       <Lable>{lable}</Lable>
-      <Input
+      <ValidationInput
         placeholder={placeholder}
         isValid={isValid}
         type={type}

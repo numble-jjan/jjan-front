@@ -18,6 +18,7 @@ export { default as MenuBar } from './Molecule/MenuBar';
 export { default as TitleBar } from './Molecule/TitleBar';
 export { default as GuideTitle } from './Molecule/GuideTitle';
 export { default as ProfileIcon } from './Molecule/ProfileIcon';
-export { default as InterestedBarBox } from './Molecule/InterestedBarBox';
+export { default as SearchInput } from './Molecule/SearchInput';
+export { default as ValidationInput } from './Molecule/ValidationInput';
 
 export { default as Layout } from './Organism/Layout';

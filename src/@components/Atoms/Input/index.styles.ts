@@ -1,21 +1,14 @@
 import styled from 'styled-components';
 
-import { color } from '@/styles/theme';
+import { color, font } from '@/styles/theme';
 
-export const StyledInput = styled.input<{ isValid?: boolean }>`
+export const Input = styled.input`
   width: 100%;
-  height: 40px;
-  background-color: ${color.white};
-  border: 1px solid
-    ${props => (props.isValid ? color.light_gray1 : color.orange)};
-  box-sizing: border-box;
-  padding: 12px 8px;
-
-  // font 관련 스타일링 밖에서 주입할 예정
-  font-weight: 400;
-  font-size: 13px;
+  font-size: ${font.size.m};
+  font-weight: ${font.weight.regular};
   line-height: 19px;
   letter-spacing: -0.325px;
+  border: none;
   color: ${color.black};
 
   &::placeholder {
@@ -24,6 +17,10 @@ export const StyledInput = styled.input<{ isValid?: boolean }>`
 
   &:focus {
     outline: none;
-    // ${props => (props.isValid ? 'none' : '')};
+  }
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    box-shadow: 0 0 0 1000px white inset;
   }
 `;
