@@ -44,11 +44,13 @@ const Container = styled.div`
   align-items: center;
   background-color: transparent;
   padding: 16px;
+  position: absolute;
 `;
 const Floating = styled.div`
   width: 328px;
   height: 150px;
   background-color: white;
+  z-index: 20;
 `;
 const MessageBox = styled.div`
   width: 100%;
