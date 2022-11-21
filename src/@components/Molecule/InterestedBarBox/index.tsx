@@ -63,7 +63,6 @@ const InterestedBarBox = ({
               fontSize={font.size.s}
               fontWeight={font.weight.bold}
               style={{
-                marginTop: '19px',
                 position: 'absolute',
                 bottom: '12px',
               }}

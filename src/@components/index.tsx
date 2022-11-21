@@ -20,5 +20,6 @@ export { default as GuideTitle } from './Molecule/GuideTitle';
 export { default as ProfileIcon } from './Molecule/ProfileIcon';
 export { default as SearchInput } from './Molecule/SearchInput';
 export { default as ValidationInput } from './Molecule/ValidationInput';
+export { default as InterestedBarBox } from './Molecule/InterestedBarBox';
 
 export { default as Layout } from './Organism/Layout';

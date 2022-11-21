@@ -42,6 +42,7 @@ const CommunityBox = ({
                 float: 'right',
                 lineHeight: '17px',
                 letterSpacing: '-0.2px',
+                marginTop: '1px',
               }}
             >
               {date}
@@ -63,7 +64,10 @@ const CommunityBox = ({
               color={color.dark_gray}
               fontSize={font.size.s}
               fontWeight={font.weight.bold}
-              style={{ marginTop: '26px' }}
+              style={{
+                position: 'absolute',
+                bottom: '10px',
+              }}
             >
               {category}
             </Typography>
