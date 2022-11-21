@@ -4,11 +4,14 @@ export const HeaderContainer = styled.div`
   padding: 11px 13px 13px 12.82px;
   img {
     float: left;
+    margin-top: 1px;
   }
 `;
 export const ContentContainer = styled.div`
   width: 100%;
+  height: 100%;
   padding: 10px;
+  position: relative;
 `;
 export const TypographyWrapper = styled.div`
   display: inline-block;
