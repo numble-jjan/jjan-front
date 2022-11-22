@@ -22,5 +22,6 @@ export { default as SearchInput } from './Molecule/SearchInput';
 export { default as ValidationInput } from './Molecule/ValidationInput';
 export { default as InterestedBarBox } from './Molecule/InterestedBarBox';
 export { default as KeywordList } from './Molecule/KeywordList';
+export { default as CategoryBar } from './Molecule/CategoryBar';
 
 export { default as Layout } from './Organism/Layout';
