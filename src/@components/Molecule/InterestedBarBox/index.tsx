@@ -4,19 +4,17 @@ import { color, font } from '@/styles/theme';
 import * as Styled from './index.styles';
 
 interface Props {
-  category: string;
-  content: string;
-  date: string;
-  likes: number;
+  BarName: string;
+  BarType: string;
+  location: string;
   style?: CSSProperties;
   onClick?: () => void;
 }
 
-const CommunityBox = ({
-  category,
-  content,
-  date,
-  likes,
+const InterestedBarBox = ({
+  BarName,
+  BarType,
+  location,
   style,
   onClick,
 }: Props) => {
@@ -25,28 +23,21 @@ const CommunityBox = ({
       <MiniBox
         headerChildren={
           <Styled.HeaderContainer>
-            <img src="icons/icon-heart.svg" />
-            <Typography
-              color={color.light_purple}
-              fontSize={font.size.m}
-              fontWeight={font.weight.bold}
-              style={{ float: 'left', marginLeft: '5px', lineHeight: '19px' }}
-            >
-              {likes}
-            </Typography>
-            <Typography
-              color={color.dark_gray}
-              fontSize={font.size.s}
-              fontWeight={font.weight.medium}
-              style={{
-                float: 'right',
-                lineHeight: '17px',
-                letterSpacing: '-0.2px',
-                marginTop: '1px',
-              }}
-            >
-              {date}
-            </Typography>
+            <img src="icons/icon-purple-location.svg" />
+            <Styled.LocationWrapper>
+              <Typography
+                color={color.black}
+                fontSize={font.size.m}
+                fontWeight={font.weight.medium}
+                style={{
+                  float: 'left',
+                  marginLeft: '7px',
+                  lineHeight: '18.82px',
+                }}
+              >
+                {location}
+              </Typography>
+            </Styled.LocationWrapper>
           </Styled.HeaderContainer>
         }
         contentChildren={
@@ -57,19 +48,27 @@ const CommunityBox = ({
                 fontSize={font.size.m}
                 fontWeight={font.weight.medium}
               >
-                {content}
+                {BarName}
               </Typography>
             </Styled.TypographyWrapper>
+            <Typography
+              color={color.dark_gray}
+              fontSize={font.size.xs}
+              fontWeight={font.weight.medium}
+            >
+              {BarType}
+            </Typography>
             <Typography
               color={color.dark_gray}
               fontSize={font.size.s}
               fontWeight={font.weight.bold}
               style={{
                 position: 'absolute',
-                bottom: '10px',
+                bottom: '12px',
               }}
+              onClick={onClick}
             >
-              {category}
+              자세히보기
             </Typography>
           </Styled.ContentContainer>
         }
@@ -79,4 +78,4 @@ const CommunityBox = ({
   );
 };
 
-export default CommunityBox;
+export default InterestedBarBox;

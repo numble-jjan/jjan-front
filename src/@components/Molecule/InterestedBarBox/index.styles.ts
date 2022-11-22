@@ -1,20 +1,25 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-  padding: 11px 13px 13px 12.82px;
+  width: 100%;
+  height: 100%;
+  padding: 13px 15px 12px 15px;
   img {
     float: left;
-    margin-top: 1px;
   }
+`;
+export const LocationWrapper = styled.div`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 export const ContentContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: 10px;
   position: relative;
+  padding: 12px 11px 0px 11px;
 `;
 export const TypographyWrapper = styled.div`
-  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
@@ -22,6 +27,6 @@ export const TypographyWrapper = styled.div`
   text-align: left;
   word-wrap: break-word;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 `;
