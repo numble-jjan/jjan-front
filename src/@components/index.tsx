@@ -8,6 +8,7 @@ export { default as Message } from './Atoms/Message';
 export { default as MiniBox } from './Atoms/MiniBox';
 export { default as ModalPortal } from './Atoms/ModalPortal';
 export { default as Typography } from './Atoms/Typography';
+export { default as Image } from './Atoms/Image';
 
 export { default as CommunityBox } from './Molecule/CommunityBox';
 export { default as Modal } from './Molecule/Modal';
