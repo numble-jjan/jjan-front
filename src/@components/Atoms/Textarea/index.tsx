@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
-const Textarea = () => {
-  return <textarea></textarea>;
+interface Props {
+  onChange?: () => void;
+  style: CSSProperties;
+}
+
+const Textarea = ({ style, onChange }: Props) => {
+  return <textarea style={style} onChange={onChange}></textarea>;
 };
 export default Textarea;
