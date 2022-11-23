@@ -27,5 +27,6 @@ export { default as KeywordList } from './Molecule/KeywordList';
 export { default as CategoryBar } from './Molecule/CategoryBar';
 export { default as Comment } from './Molecule/Comment';
 export { default as ReplyComment } from './Molecule/ReplyComment';
+export { default as PostTextarea } from './Molecule/PostTextarea';
 
 export { default as Layout } from './Organism/Layout';
