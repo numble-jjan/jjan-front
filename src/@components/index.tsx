@@ -9,6 +9,7 @@ export { default as MiniBox } from './Atoms/MiniBox';
 export { default as ModalPortal } from './Atoms/ModalPortal';
 export { default as Typography } from './Atoms/Typography';
 export { default as Image } from './Atoms/Image';
+export { default as Textarea } from './Atoms/Textarea';
 
 export { default as CommunityBox } from './Molecule/CommunityBox';
 export { default as Modal } from './Molecule/Modal';
@@ -22,7 +23,7 @@ export { default as ProfileIcon } from './Molecule/ProfileIcon';
 export { default as SearchInput } from './Molecule/SearchInput';
 export { default as ValidationInput } from './Molecule/ValidationInput';
 export { default as InterestedBarBox } from './Molecule/InterestedBarBox';
-export { default as KeywordList } from './Molecule/KeywordList'; 
+export { default as KeywordList } from './Molecule/KeywordList';
 export { default as CategoryBar } from './Molecule/CategoryBar';
 export { default as Comment } from './Molecule/Comment';
 export { default as ReplyComment } from './Molecule/ReplyComment';
