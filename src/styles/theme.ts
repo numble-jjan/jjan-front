@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react';
+
 export const color = {
   purple: '#683CED',
   light_purple: '#925CE9',
@@ -98,5 +100,40 @@ export const font = {
     regular: 'normal',
     medium: '500',
     bold: 'bold',
+  },
+};
+
+type Img = {
+  profileLarge: CSSProperties;
+  porfileMedium: CSSProperties;
+  smallCircle: CSSProperties;
+  mediumCircle: CSSProperties;
+};
+export const img: Img = {
+  profileLarge: {
+    width: '75px',
+    height: '75px',
+  },
+  porfileMedium: {
+    width: '50px',
+    height: '50px',
+  },
+  smallCircle: {
+    width: '28px',
+    height: '28px',
+    backgroundColor: `${color.purple}`,
+    backgroundPosition: 'center',
+    borderRadius: '50%',
+    backgroundSize: '1px',
+    padding: '6px',
+  },
+  mediumCircle: {
+    width: '50px',
+    height: '50px',
+    backgroundColor: `${color.purple}`,
+    backgroundPosition: 'center',
+    borderRadius: '50%',
+    backgroundSize: '1px',
+    padding: '6px',
   },
 };

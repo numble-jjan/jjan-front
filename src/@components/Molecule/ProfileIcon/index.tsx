@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
-import { color } from '@/styles/theme';
+
+import Image from '@/@components/Atoms/Image';
+import { img } from '@/styles/theme';
 
 interface Props {
   extended?: boolean;
@@ -14,30 +16,33 @@ const ProfileIcon = ({ extended = false }: Props) => {
     }
     hiddenFileInput.current.click();
   };
+
   return (
-    <IconContainer>
-      <img
+    <Container>
+      <Image
         src="icons/icon-profile-anonymous.svg"
-        alt="프로필 사진"
+        alt="프로필 이미지"
+        style={img.profileLarge}
         onClick={handleClick}
       />
       {extended && (
-        <CameraCircle backgroundColor={color.purple}>
-          <img src="icons/icon-camera.svg" alt="카메라 아이콘" />
-        </CameraCircle>
+        <ProfileSatelliteWrapper>
+          <Image
+            src="icons/icon-camera.svg"
+            alt="카메라 아이콘"
+            style={img.smallCircle}
+            onClick={handleClick}
+          />
+        </ProfileSatelliteWrapper>
       )}
       <input type="file" ref={hiddenFileInput} />
-    </IconContainer>
+    </Container>
   );
 };
 
 export default ProfileIcon;
 
-interface CameraCircleProps {
-  backgroundColor: string;
-}
-
-const IconContainer = styled.form`
+const Container = styled.form`
   position: relative;
   display: flex;
   align-items: center;
@@ -49,16 +54,9 @@ const IconContainer = styled.form`
   }
 `;
 
-const CameraCircle = styled.div<CameraCircleProps>`
+const ProfileSatelliteWrapper = styled.div`
   position: absolute;
   bottom: 0px;
   left: 50%;
   transform: translateX(50%);
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  background-color: ${({ backgroundColor }) => backgroundColor};
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
