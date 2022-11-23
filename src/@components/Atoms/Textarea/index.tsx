@@ -1,11 +1,10 @@
-import React, { CSSProperties } from 'react';
+import React from 'react';
 
-interface Props {
+interface Props extends React.ComponentPropsWithoutRef<'textarea'> {
   onChange?: () => void;
-  style: CSSProperties;
 }
 
-const Textarea = ({ style, onChange }: Props) => {
-  return <textarea style={style} onChange={onChange}></textarea>;
+const Textarea = ({ onChange, ...props }: Props) => {
+  return <textarea onChange={onChange} {...props}></textarea>;
 };
 export default Textarea;
