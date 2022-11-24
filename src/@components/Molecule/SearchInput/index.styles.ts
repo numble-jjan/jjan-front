@@ -9,7 +9,9 @@ export const Container = styled.div`
 
   display: flex;
   justify-content: space-between;
-
+  & input {
+    height: 100%;
+  }
   & svg {
     margin-left: 8px;
   }
