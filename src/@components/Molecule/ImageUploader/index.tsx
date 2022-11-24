@@ -1,22 +1,21 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
 
-type C =
-  | React.ComponentPropsWithoutRef<'img'>
-  | React.ComponentPropsWithRef<'svg'>;
 interface Props {
-  ImageElement: React.FunctionComponent<C>;
+  ImageElement: JSX.Element;
 }
+
 const ImageUploader = ({ ImageElement }: Props) => {
   const hiddenFileInput = useRef<HTMLInputElement>(null);
   const onClickImage = () => {
     if (!hiddenFileInput.current) return;
     hiddenFileInput.current.click();
   };
+  const Image = React.cloneElement(ImageElement, { onClick: onClickImage });
 
   return (
     <Container>
-      <ImageElement onClick={onClickImage} />
+      {Image}
       <input type="file" ref={hiddenFileInput} />
     </Container>
   );
