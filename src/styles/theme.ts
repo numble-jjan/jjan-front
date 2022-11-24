@@ -141,7 +141,7 @@ export const img: Img = {
 type Badge = {
   gray: CSSProperties;
   purple: CSSProperties;
-  gray_font_black: CSSProperties;
+  wrapper: CSSProperties;
 };
 export const badge: Badge = {
   gray: {
@@ -149,17 +149,20 @@ export const badge: Badge = {
     color: `${color.light_gray1}`,
     fontSize: `${font.size.s}`,
     fontWeight: `${font.weight.regular}`,
+    height: '24px',
   },
   purple: {
     backgroundColor: `${color.purple}`,
     color: `${color.white}`,
     fontSize: `${font.size.s}`,
     fontWeight: `${font.weight.regular}`,
+    height: '28px',
   },
-  gray_font_black: {
+  wrapper: {
     border: `1px solid ${color.light_gray1}`,
     color: `${color.black}`,
     fontSize: `${font.size.s}`,
     fontWeight: `${font.weight.regular}`,
+    height: '32px',
   },
 };
