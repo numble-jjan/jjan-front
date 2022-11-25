@@ -1,15 +1,9 @@
-export type HttpConfig = {
-  method?: string;
-  baseURL?: string;
-  params?: any;
-  data?: any;
-  header?: string;
-};
+import { RequestConfig } from '@/@types/request';
 
 export default interface HttpRequestPort {
-  get(url: string, config?: HttpConfig): Promise<any>;
-  post(url: string, data: any, config?: HttpConfig): Promise<any>;
-  delete(url: string, config?: HttpConfig): Promise<any>;
-  put(url: string, data: any, config?: HttpConfig): Promise<any>;
-  patch(url: string, data: any, config?: HttpConfig): Promise<any>;
+  get(url: string, config?: RequestConfig): Promise<any>;
+  post<T>(url: string, data: T, config?: RequestConfig): Promise<any>;
+  delete(url: string, config?: RequestConfig): Promise<any>;
+  put<T>(url: string, data: T, config?: RequestConfig): Promise<any>;
+  patch<T>(url: string, data: T, config?: RequestConfig): Promise<any>;
 }
