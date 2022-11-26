@@ -8,9 +8,9 @@ type RootProps = {
 };
 
 export const Root = styled.div<RootProps>`
-  ${props => `top: ${props.top};`}
-  ${props => `bottom: ${props.bottom};`} 
-  ${props => `left: ${props.left};`} 
-  ${props => `right: ${props.right};`} 
+  ${props => `top: ${props.top}px;`}
+  ${props => `bottom: ${props.bottom}px;`} 
+  ${props => `left: ${props.left}px;`} 
+  ${props => `right: ${props.right}px;`} 
   position: fixed;
 `;
