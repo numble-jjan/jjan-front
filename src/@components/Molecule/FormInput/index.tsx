@@ -2,7 +2,7 @@ import React, { InputHTMLAttributes } from 'react';
 import { UseFormRegisterReturn } from 'react-hook-form';
 import styled from 'styled-components';
 
-import { ValidationInput, Lable, Message } from '@/@components';
+import { ValidationInput, Typography } from '@/@components';
 
 import { InputType } from '@/@types/inputType';
 import { color } from '@/styles/theme';
@@ -31,7 +31,7 @@ const FormInput = ({
 }: IProps) => {
   return (
     <Container>
-      <Lable>{lable}</Lable>
+      <Typography>{lable}</Typography>
       <ValidationInput
         placeholder={placeholder}
         isValid={isValid}
@@ -40,10 +40,10 @@ const FormInput = ({
         {...register}
       />
       {!isValid && errorMessage && (
-        <Message color={color.orange}>{errorMessage}</Message>
+        <Typography color={color.orange}>{errorMessage}</Typography>
       )}
       {isValid && isTouched && confirmMessage && (
-        <Message color={color.purple}>{confirmMessage}</Message>
+        <Typography color={color.purple}>{confirmMessage}</Typography>
       )}
     </Container>
   );
