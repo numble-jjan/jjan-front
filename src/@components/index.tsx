@@ -9,6 +9,8 @@ export { default as MiniBox } from './Atoms/MiniBox';
 export { default as ModalPortal } from './Atoms/ModalPortal';
 export { default as Typography } from './Atoms/Typography';
 export { default as Image } from './Atoms/Image';
+export { default as Textarea } from './Atoms/Textarea';
+export { default as Badge } from './Atoms/Badge';
 
 export { default as CommunityBox } from './Molecule/CommunityBox';
 export { default as Modal } from './Molecule/Modal';
@@ -26,6 +28,11 @@ export { default as KeywordList } from './Molecule/KeywordList';
 export { default as CategoryBar } from './Molecule/CategoryBar';
 export { default as Comment } from './Molecule/Comment';
 export { default as ReplyComment } from './Molecule/ReplyComment';
+export { default as ImageUploader } from './Molecule/ImageUploader';
+export { default as UploadImageIcon } from './Molecule/UploadImageIcon';
 export { default as PostingButton } from './Molecule/PostingButton';
 
 export { default as Layout } from './Organism/Layout';
+export { default as PostTextarea } from './Organism/PostTextarea';
+export { default as PostImageUploader } from './Organism/PostImageUploader';
+export { default as PostRelatedTags } from './Organism/PostRelatedTags';
