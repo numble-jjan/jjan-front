@@ -3,7 +3,7 @@ import React from 'react';
 import * as Styled from './index.styles';
 import { Typography, Divider } from '@/@components';
 
-import useGoPrev from '@/@hooks/useGoPrev';
+import usePrevious from '@/@hooks/usePrevious';
 import { color } from '@/styles/theme';
 
 interface Props {
@@ -11,16 +11,18 @@ interface Props {
 }
 
 const Header = ({ title }: Props) => {
-  const { goPrev } = useGoPrev();
+  const { goPrevious } = usePrevious();
 
   return (
-    <Styled.Container>
-      <Styled.IconWrapper onClick={goPrev}>
-        <img src="icons/icon-prev.svg" alt="이전으로 가기" />
-      </Styled.IconWrapper>
-      <Typography fontSize={18}>{title}</Typography>
+    <>
+      <Styled.Container>
+        <Styled.IconWrapper onClick={goPrevious}>
+          <img src="icons/icon-prev.svg" alt="이전으로 가기" />
+        </Styled.IconWrapper>
+        <Typography fontSize={18}>{title}</Typography>
+      </Styled.Container>
       <Divider color={color.light_gray2} />
-    </Styled.Container>
+    </>
   );
 };
 
