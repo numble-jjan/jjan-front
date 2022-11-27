@@ -3,7 +3,7 @@ import React, { CSSProperties } from 'react';
 interface Props {
   src: string;
   alt: string;
-  style: CSSProperties;
+  style?: CSSProperties;
   onClick?: () => void;
 }
 

@@ -137,3 +137,34 @@ export const img: Img = {
     padding: '6px',
   },
 };
+
+type Badge = {
+  gray: CSSProperties;
+  purple: CSSProperties;
+  wrapper: CSSProperties;
+};
+export const badge: Badge = {
+  gray: {
+    border: `1px solid ${color.light_gray1}`,
+    color: `${color.light_gray1}`,
+    fontSize: `${font.size.s}`,
+    fontWeight: `${font.weight.regular}`,
+    height: '24px',
+    borderRadius: '12px',
+  },
+  purple: {
+    backgroundColor: `${color.purple}`,
+    color: `${color.white}`,
+    fontSize: `${font.size.s}`,
+    fontWeight: `${font.weight.regular}`,
+    height: '28px',
+    borderRadius: '15px',
+  },
+  wrapper: {
+    border: `1px solid ${color.light_gray1}`,
+    color: `${color.black}`,
+    fontSize: `${font.size.s}`,
+    fontWeight: `${font.weight.regular}`,
+    height: '32px',
+  },
+};

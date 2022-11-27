@@ -12,11 +12,11 @@ export interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 const SearchInput = ({ type, ref, icon, ...props }: Props) => {
-  const Icon = icon || 'svg';
+  const Icon = icon;
   return (
     <Styled.Container>
       <Input type={type} ref={ref} {...props} />
-      <Icon />
+      {Icon && <Icon />}
     </Styled.Container>
   );
 };
