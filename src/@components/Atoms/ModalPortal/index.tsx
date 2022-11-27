@@ -8,11 +8,8 @@ interface Props {
 }
 
 const ModalPortal = ({ children }: Props) => {
-  const $backdrop = document.getElementById('backdrop');
-  if (!$backdrop) throw new Error('no backdrop');
-
-  const $modal = document.getElementById('modal');
-  if (!$modal) throw new Error('no modal');
+  const $backdrop = document.getElementById('backdrop') as HTMLElement;
+  const $modal = document.getElementById('modal') as HTMLElement;
 
   return (
     <>

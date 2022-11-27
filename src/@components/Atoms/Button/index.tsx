@@ -9,11 +9,9 @@ interface Props extends PropsWithChildren {
 
 const Button = ({ style, onClick, children }: Props) => {
   return (
-    <>
-      <Styled.Root style={style} onClick={onClick}>
-        {children}
-      </Styled.Root>
-    </>
+    <Styled.Root style={style} onClick={onClick}>
+      {children}
+    </Styled.Root>
   );
 };
 

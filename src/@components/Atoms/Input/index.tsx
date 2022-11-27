@@ -10,7 +10,7 @@ interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
 
 const Input = forwardRef<HTMLInputElement, Props>(
   ({ type, ...props }: Props, ref?: React.Ref<HTMLInputElement>) => {
-    return <Styled.Input type={type} ref={ref} {...props} />;
+    return <Styled.Root type={type} ref={ref} {...props} />;
   },
 );
 

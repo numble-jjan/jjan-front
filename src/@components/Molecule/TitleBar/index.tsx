@@ -1,56 +1,31 @@
 import React from 'react';
 import { PropsWithChildren } from 'react';
-import { Typography } from '@/@components';
-import { color, font } from '@/styles/theme';
+
+import { Typography, Divider } from '@/@components';
+
+import { color } from '@/styles/theme';
 import * as Styled from './index.styles';
 
 interface Props extends PropsWithChildren {
-  type?: 'default' | 'essential';
+  essential: boolean;
 }
 
-const TitleBar = ({ type, children }: Props) => {
-  return type === 'essential' ? (
-    <Styled.Root>
-      <Styled.Title>
-        <Typography
-          color={color.black}
-          fontSize={font.size.title}
-          fontWeight={font.weight.medium}
-        >
-          {children}
-        </Typography>
-      </Styled.Title>
-      <Styled.Essential>
-        <Typography
-          color={color.black}
-          fontSize={font.size.s}
-          fontWeight={font.weight.medium}
-        >
-          필수사항
-        </Typography>
-      </Styled.Essential>
-      <Styled.Essential>
-        <Typography
-          color={color.purple}
-          fontSize={font.size.s}
-          fontWeight={font.weight.medium}
-        >
-          *
-        </Typography>
-      </Styled.Essential>
-    </Styled.Root>
-  ) : (
-    <Styled.Root>
-      <Styled.Title>
-        <Typography
-          color={color.black}
-          fontSize={font.size.title}
-          fontWeight={font.weight.medium}
-        >
-          {children}
-        </Typography>
-      </Styled.Title>
-    </Styled.Root>
+const TitleBar = ({ essential, children }: Props) => {
+  return (
+    // 16 500
+    <>
+      <Styled.Container>
+        <Typography color={color.black}>{children}</Typography>
+        {essential && (
+          // 12 500
+          <Styled.RequiredWrapper>
+            <Typography color={color.purple}>*</Typography>
+            <Typography color={color.black}>필수사항</Typography>
+          </Styled.RequiredWrapper>
+        )}
+      </Styled.Container>
+      <Divider color={color.black} />
+    </>
   );
 };
 

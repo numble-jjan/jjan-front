@@ -47,7 +47,6 @@ const Container = styled.div`
   position: absolute;
 `;
 const Floating = styled.div`
-  width: 328px;
   height: 150px;
   background-color: white;
   z-index: 20;

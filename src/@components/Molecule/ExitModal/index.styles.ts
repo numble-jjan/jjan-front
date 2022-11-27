@@ -8,7 +8,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  padding: 16px;
   position: absolute;
 `;
 export const MessageBox = styled.div`

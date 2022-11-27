@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { color, font } from '@/styles/theme';
 
-export const Input = styled.input`
+export const Root = styled.input`
   width: 100%;
   font-size: ${font.size.m};
   font-weight: ${font.weight.regular};
