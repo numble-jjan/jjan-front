@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Header } from '@/@components';
-import { Typography, Button, GuideTitle } from '@/@components';
+import { Typography, Button, Header } from '@/@components';
+import Introduction from './Introduction';
 
 import { btn2, btn4, color } from '@/styles/theme';
-import ProfileIcon from '@/@components/Molecule/ProfileIcon';
 
 const ProfileSetting = () => {
   const onClickSetLocation = () => {
@@ -14,12 +13,15 @@ const ProfileSetting = () => {
   const onClickSetProfile = () => {
     //sample
   };
+  /**
+   * todo
+   * TitleWithImage를 통해서 GuideTitle을 삭제하도록 합니다.
+   */
   return (
     <div>
       <Header title="프로필 설정" />
       <Content>
-        <GuideTitle>내 주변 술친구를 마주할 프로필을 등록해주세요.</GuideTitle>
-        <ProfileIcon extended={true} />
+        <Introduction />
         {/** Input이 들어가는 자리 */}
         <ButtonContainer>
           <Button style={btn4} onClick={onClickSetLocation}>
