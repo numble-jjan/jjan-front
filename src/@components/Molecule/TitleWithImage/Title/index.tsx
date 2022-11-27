@@ -7,9 +7,9 @@ const Title = ({ children }: PropsWithChildren) => {
     <Typography
       color={color.black}
       fontSize={font.size.title}
-      fontWeight={font.weight.bold}
+      fontWeight={font.weight.regular}
     >
-      {children};
+      {children}
     </Typography>
   );
 };
