@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 
-const useGoPrev = () => {
+const usePrevious = () => {
   const navigate = useNavigate();
 
-  const goPrev = () => {
+  const goPrevious = () => {
     navigate(-1);
   };
 
-  return { goPrev };
+  return { goPrevious };
 };
-export default useGoPrev;
+export default usePrevious;
