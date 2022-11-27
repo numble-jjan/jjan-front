@@ -9,7 +9,7 @@ const SubTitle = ({ children }: PropsWithChildren) => {
       fontSize={font.size.s}
       fontWeight={font.weight.regular}
     >
-      {children};
+      {children}
     </Typography>
   );
 };
