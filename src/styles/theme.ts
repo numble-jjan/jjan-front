@@ -150,6 +150,7 @@ export const badge: Badge = {
     fontSize: `${font.size.s}`,
     fontWeight: `${font.weight.regular}`,
     height: '24px',
+    borderRadius: '12px',
   },
   purple: {
     backgroundColor: `${color.purple}`,
@@ -157,6 +158,7 @@ export const badge: Badge = {
     fontSize: `${font.size.s}`,
     fontWeight: `${font.weight.regular}`,
     height: '28px',
+    borderRadius: '15px',
   },
   wrapper: {
     border: `1px solid ${color.light_gray1}`,
