@@ -14,13 +14,15 @@ const Header = ({ title }: Props) => {
   const { goPrev } = useGoPrev();
 
   return (
-    <Styled.Container>
-      <Styled.IconWrapper onClick={goPrev}>
-        <img src="icons/icon-prev.svg" alt="이전으로 가기" />
-      </Styled.IconWrapper>
-      <Typography fontSize={18}>{title}</Typography>
+    <>
+      <Styled.Container>
+        <Styled.IconWrapper onClick={goPrev}>
+          <img src="icons/icon-prev.svg" alt="이전으로 가기" />
+        </Styled.IconWrapper>
+        <Typography fontSize={18}>{title}</Typography>
+      </Styled.Container>
       <Divider color={color.light_gray2} />
-    </Styled.Container>
+    </>
   );
 };
 
