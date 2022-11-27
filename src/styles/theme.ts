@@ -103,6 +103,76 @@ export const font = {
   },
 };
 
+export const typo1 = {
+  size: '10px',
+  weight: '400',
+};
+
+export const typo2 = {
+  size: '10px',
+  weight: '700',
+};
+
+export const typo3 = {
+  size: '11px',
+  weight: '400',
+};
+
+export const typo4 = {
+  size: '11px',
+  weight: '700',
+};
+
+export const typo5 = {
+  size: '12px',
+  weight: '400',
+};
+
+export const typo6 = {
+  size: '12px',
+  weight: '700',
+};
+
+export const typo7 = {
+  size: '13px',
+  weight: '400',
+};
+
+export const typo8 = {
+  size: '13px',
+  weight: '700',
+};
+
+export const typo9 = {
+  size: '14px',
+  weight: '400',
+};
+
+export const typo10 = {
+  size: '14px',
+  weight: '700',
+};
+
+export const typo11 = {
+  size: '14px',
+  weight: '900',
+};
+
+export const typo12 = {
+  size: '16px',
+  weight: '400',
+};
+
+export const typo13 = {
+  size: '14px',
+  weight: '700',
+};
+
+export const typo14 = {
+  size: '18px',
+  weight: '700',
+};
+
 type Img = {
   profileLarge: CSSProperties;
   porfileMedium: CSSProperties;
