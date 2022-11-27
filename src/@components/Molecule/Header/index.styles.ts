@@ -7,7 +7,6 @@ export const Container = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #eeeeee;
 `;
 
 export const IconWrapper = styled.div`

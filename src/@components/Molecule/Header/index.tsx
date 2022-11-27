@@ -1,8 +1,10 @@
 import React from 'react';
-import useGoPrev from '@/@hooks/useGoPrev';
 
 import * as Styled from './index.styles';
-import { Typography } from '@/@components';
+import { Typography, Divider } from '@/@components';
+
+import useGoPrev from '@/@hooks/useGoPrev';
+import { color } from '@/styles/theme';
 
 interface Props {
   title: string;
@@ -17,6 +19,7 @@ const Header = ({ title }: Props) => {
         <img src="icons/icon-prev.svg" alt="이전으로 가기" />
       </Styled.IconWrapper>
       <Typography fontSize={18}>{title}</Typography>
+      <Divider color={color.light_gray2} />
     </Styled.Container>
   );
 };
