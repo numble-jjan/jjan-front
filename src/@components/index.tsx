@@ -30,6 +30,7 @@ export { default as Comment } from './Molecule/Comment';
 export { default as ReplyComment } from './Molecule/ReplyComment';
 export { default as ImageUploader } from './Molecule/ImageUploader';
 export { default as UploadImageIcon } from './Molecule/UploadImageIcon';
+export { default as PostingButton } from './Molecule/PostingButton';
 
 export { default as Layout } from './Organism/Layout';
 export { default as PostTextarea } from './Organism/PostTextarea';
