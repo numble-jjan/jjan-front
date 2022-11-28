@@ -23,7 +23,7 @@ const index = () => {
 
   return (
     <Layout headerTitle="회원 가입">
-      <TitleBar type="essential">회원 정보</TitleBar>
+      <TitleBar essential={true}>회원 정보</TitleBar>
       <Styled.FormContainer>
         <FormInput
           lable="이메일"

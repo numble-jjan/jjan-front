@@ -29,11 +29,6 @@ const InterestedBarBox = ({
                 color={color.black}
                 fontSize={font.size.m}
                 fontWeight={font.weight.medium}
-                style={{
-                  float: 'left',
-                  marginLeft: '7px',
-                  lineHeight: '18.82px',
-                }}
               >
                 {location}
               </Typography>
