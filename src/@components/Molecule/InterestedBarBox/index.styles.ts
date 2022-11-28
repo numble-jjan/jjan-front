@@ -4,11 +4,12 @@ export const HeaderContainer = styled.div`
   width: 100%;
   height: 100%;
   padding: 13px 15px 12px 15px;
-  img {
-    float: left;
-  }
+  display: flex;
+  justify-content: flex-first;
+  align-items: center;
 `;
 export const LocationWrapper = styled.div`
+  margin-left: 7px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
