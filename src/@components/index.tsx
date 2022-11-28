@@ -1,7 +1,6 @@
 export { default as Backdrop } from './Atoms/Backdrop';
 export { default as Button } from './Atoms/Button';
 export { default as Input } from './Atoms/Input';
-export { default as ListItem } from './Atoms/ListItem';
 export { default as MiniBox } from './Atoms/MiniBox';
 export { default as ModalPortal } from './Atoms/ModalPortal';
 export { default as Typography } from './Atoms/Typography';
@@ -12,7 +11,7 @@ export { default as Divider } from './Atoms/Divider';
 
 export { default as Card } from './Molecule/Card';
 export { default as CommunityBox } from './Molecule/CommunityBox';
-export { default as Modal } from './Molecule/Modal';
+export { default as Modal } from './Molecule/ConfirmModal';
 export { default as ExitModal } from './Molecule/ExitModal';
 export { default as FormInput } from './Molecule/FormInput';
 export { default as Header } from './Molecule/Header';
@@ -33,8 +32,11 @@ export { default as PostingButton } from './Molecule/PostingButton';
 export { default as TitleWithImage } from './Molecule/TitleWithImage';
 export { default as GuideSection } from './Molecule/GuideSection';
 export { default as MenuBarIcon } from './Molecule/MenuBarIcon';
+export { default as ProfileMainInfo } from './Molecule/ProfileMainInfo';
 
 export { default as Layout } from './Organism/Layout';
 export { default as PostTextarea } from './Organism/PostTextarea';
 export { default as PostImageUploader } from './Organism/PostImageUploader';
 export { default as PostRelatedTags } from './Organism/PostRelatedTags';
+
+export { default as Content } from './Layout/Content';
