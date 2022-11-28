@@ -176,6 +176,7 @@ export const typo14 = {
 type Img = {
   profileLarge: CSSProperties;
   porfileMedium: CSSProperties;
+  innerTagCircle: CSSProperties;
   smallCircle: CSSProperties;
   mediumCircle: CSSProperties;
 };
@@ -187,6 +188,13 @@ export const img: Img = {
   porfileMedium: {
     width: '50px',
     height: '50px',
+  },
+  innerTagCircle: {
+    width: '16px',
+    height: '16px',
+    backgroundColor: `rgba(0,0,0,0.6)`,
+    borderRadius: '50%',
+    padding: '3px',
   },
   smallCircle: {
     width: '28px',
