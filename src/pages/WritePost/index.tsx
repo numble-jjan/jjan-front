@@ -39,6 +39,8 @@ const WritePost = () => {
     if (e.currentTarget.value.length > 2000) return;
     setText(e.currentTarget.value);
   };
+  const handleClickSubmit = () => {};
+
   const createDeleteHandler = (id: number) => () => {
     const newTags = tags.filter(tag => tag.id !== id);
     setTags(newTags);
@@ -55,7 +57,7 @@ const WritePost = () => {
           onKeyDownEnter={handleEnterTag}
           createDeleteHandler={createDeleteHandler}
         />
-        <SubmitButton />
+        <SubmitButton onClick={handleClickSubmit} />
       </Content>
     </Container>
   );
