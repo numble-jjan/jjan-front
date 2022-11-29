@@ -1,0 +1,2 @@
+interface PostRequest {}
+interface PostResponse {}
