@@ -15,10 +15,11 @@ const Badge = ({ style, children, ...rest }: Props) => {
 export default Badge;
 
 const Container = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: max-content;
-  padding: 5px 9px 4px;
+  padding: 4px 4px 4px 8px;
   text-align: center;
 `;
