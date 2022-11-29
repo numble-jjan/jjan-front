@@ -36,6 +36,7 @@ export { default as ProfileMainInfo } from './Molecule/ProfileMainInfo';
 export { default as TagChip } from './Molecule/TagChip';
 export { default as CancelIcon } from './Molecule/CancelIcon';
 export { default as CardKeyword } from './Molecule/CardKeyword';
+export { default as Emphasis } from './Molecule/Emphasis';
 
 export { default as Layout } from './Organism/Layout';
 export { default as PostTextarea } from './Organism/PostTextarea';
