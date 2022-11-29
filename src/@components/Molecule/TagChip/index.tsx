@@ -30,5 +30,6 @@ export default TagChip;
 const Container = styled(Chip)`
   & > img {
     margin-left: 4px;
+    cursor: pointer;
   }
 `;
