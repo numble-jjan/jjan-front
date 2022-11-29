@@ -1,14 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Header } from '@/@components';
 import Introduction from './Introduction';
 import Buttons from './Buttons';
+import { HeaderCompound } from '@/@components/Molecule/Header';
 
 const ProfileSetting = () => {
   return (
     <div>
-      <Header title="프로필 설정" />
+      <HeaderCompound>
+        <HeaderCompound.Previous />
+        <HeaderCompound.Title>프로필 설정</HeaderCompound.Title>
+      </HeaderCompound>
       <Content>
         <Introduction />
         {/** Input이 들어가는 자리 */}
