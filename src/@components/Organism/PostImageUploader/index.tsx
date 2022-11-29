@@ -14,6 +14,7 @@ const PostImageUploader = () => {
 export default PostImageUploader;
 
 const Container = styled.div`
-  & div:first-child {
+  & > form {
+    margin-top: 15px;
   }
 `;
