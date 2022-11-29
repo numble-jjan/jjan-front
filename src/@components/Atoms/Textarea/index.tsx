@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface Props extends React.ComponentPropsWithoutRef<'textarea'> {
-  onChange?: () => void;
+  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
 const Textarea = ({ onChange, ...props }: Props) => {
