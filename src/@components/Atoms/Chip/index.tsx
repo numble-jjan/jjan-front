@@ -1,18 +1,14 @@
 import React, { CSSProperties, PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import Typography from '../Typography';
 
 interface Props extends PropsWithChildren {
-  style: CSSProperties;
+  style?: CSSProperties;
 }
 
-const Badge = ({ style, children }: Props) => {
-  const { fontSize, fontWeight } = style;
+const Badge = ({ style, children, ...rest }: Props) => {
   return (
-    <Container style={style}>
-      <Typography fontSize={fontSize} fontWeight={fontWeight}>
-        {children}
-      </Typography>
+    <Container style={style} {...rest}>
+      {children}
     </Container>
   );
 };
@@ -24,4 +20,5 @@ const Container = styled.div`
   align-items: center;
   width: max-content;
   padding: 5px 9px 4px;
+  text-align: center;
 `;

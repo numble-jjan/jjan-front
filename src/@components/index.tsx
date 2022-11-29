@@ -7,11 +7,12 @@ export { default as ModalPortal } from './Atoms/ModalPortal';
 export { default as Typography } from './Atoms/Typography';
 export { default as Image } from './Atoms/Image';
 export { default as Textarea } from './Atoms/Textarea';
-export { default as Badge } from './Atoms/Badge';
+export { default as Chip } from './Atoms/Chip';
 export { default as Divider } from './Atoms/Divider';
 
 export { default as CommunityBox } from './Molecule/CommunityBox';
-export { default as Modal } from './Molecule/ConfirmModal';
+// export { default as Modal } from './Molecule/ConfirmModal';
+export { default as Modal } from './Molecule/Modal';
 export { default as ExitModal } from './Molecule/ExitModal';
 export { default as FormInput } from './Molecule/FormInput';
 export { default as Header } from './Molecule/Header';
@@ -31,10 +32,11 @@ export { default as UploadImageIcon } from './Molecule/UploadImageIcon';
 export { default as PostingButton } from './Molecule/PostingButton';
 export { default as TitleWithImage } from './Molecule/TitleWithImage';
 export { default as ProfileMainInfo } from './Molecule/ProfileMainInfo';
+export { default as TagChip } from './Molecule/TagChip';
 
 export { default as Layout } from './Organism/Layout';
 export { default as PostTextarea } from './Organism/PostTextarea';
 export { default as PostImageUploader } from './Organism/PostImageUploader';
 export { default as PostRelatedTags } from './Organism/PostRelatedTags';
 
-export { default as Content } from './Layout/Content';
+// export { default as Content } from './Layout/Content';
