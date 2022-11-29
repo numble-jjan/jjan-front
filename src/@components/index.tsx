@@ -33,6 +33,7 @@ export { default as PostingButton } from './Molecule/PostingButton';
 export { default as TitleWithImage } from './Molecule/TitleWithImage';
 export { default as ProfileMainInfo } from './Molecule/ProfileMainInfo';
 export { default as TagChip } from './Molecule/TagChip';
+export { default as CancelIcon } from './Molecule/CancelIcon';
 
 export { default as Layout } from './Organism/Layout';
 export { default as PostTextarea } from './Organism/PostTextarea';
