@@ -1,14 +1,15 @@
 import React, { PropsWithChildren } from 'react';
 import { Typography } from '@/@components';
-import { font, color } from '@/styles/theme';
 
-const Title = ({ children }: PropsWithChildren) => {
+interface Props extends PropsWithChildren {
+  fontSize: string;
+  fontWeight: string;
+  color: string;
+}
+
+const Title = ({ children, fontSize, fontWeight, color }: Props) => {
   return (
-    <Typography
-      color={color.black}
-      fontSize={font.size.title}
-      fontWeight={font.weight.regular}
-    >
+    <Typography color={color} fontSize={fontSize} fontWeight={fontWeight}>
       {children}
     </Typography>
   );
