@@ -46,6 +46,7 @@ const BadgeContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   & > div {
-    margin-right: 10px;
+    margin-right: 7px;
+    margin-bottom: 8px;
   }
 `;
