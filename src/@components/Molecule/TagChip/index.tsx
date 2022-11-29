@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Chip, Typography, Image } from '@/@components';
-import { badge, img } from '@/styles/theme';
+import { Chip, Typography, CancelIcon } from '@/@components';
+import { badge } from '@/styles/theme';
 
 interface Props {
   text: string;
-  onClickDelete?: () => void;
+  onClickDelete: () => void;
   expanded?: boolean;
 }
 
@@ -14,14 +14,7 @@ const TagChip = ({ text, expanded, onClickDelete }: Props) => {
   return (
     <Container style={badge.gray}>
       <Typography>#{text}</Typography>
-      {expanded && (
-        <Image
-          src="icons/icon-cancel.svg"
-          alt="취소"
-          style={img.innerTagCircle}
-          onClick={onClickDelete}
-        />
-      )}
+      {expanded && <CancelIcon onClickDelete={onClickDelete} />}
     </Container>
   );
 };
