@@ -30,14 +30,13 @@ export { default as ReplyComment } from './Molecule/ReplyComment';
 export { default as ImageUploader } from './Molecule/ImageUploader';
 export { default as UploadImageIcon } from './Molecule/UploadImageIcon';
 export { default as PostingButton } from './Molecule/PostingButton';
-export { default as TitleWithImage } from './Molecule/TitleWithImage';
 export { default as GuideSection } from './Molecule/GuideSection';
 export { default as MenuBarIcon } from './Molecule/MenuBarIcon';
 export { default as ProfileMainInfo } from './Molecule/ProfileMainInfo';
 export { default as TagChip } from './Molecule/TagChip';
 export { default as CancelIcon } from './Molecule/CancelIcon';
 export { default as CardKeyword } from './Molecule/CardKeyword';
-
+export { default as Emphasis } from './Molecule/Emphasis';
 
 export { default as Layout } from './Organism/Layout';
 export { default as PostTextarea } from './Organism/PostTextarea';

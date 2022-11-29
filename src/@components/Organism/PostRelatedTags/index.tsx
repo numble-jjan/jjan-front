@@ -23,7 +23,7 @@ const PostRelatedTags = ({
     <Container>
       <Typography>연관 태그 입력</Typography>
       <SearchInput type="text" onKeyDown={onKeyDownEnter} />
-      <BadgeContainer>
+      <ChipContainer>
         {tags.map(({ id, text }) => (
           <TagChip
             key={id}
@@ -32,7 +32,7 @@ const PostRelatedTags = ({
             onClickDelete={createDeleteHandler(id)}
           />
         ))}
-      </BadgeContainer>
+      </ChipContainer>
     </Container>
   );
 };
@@ -41,7 +41,7 @@ export default PostRelatedTags;
 const Container = styled.div`
   margin-bottom: 1rem;
 `;
-const BadgeContainer = styled.div`
+const ChipContainer = styled.div`
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;

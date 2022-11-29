@@ -1,16 +1,24 @@
 import React from 'react';
-import { TitleWithImage, ProfileIcon } from '@/@components';
+import styled from 'styled-components';
+import { Emphasis, Typography, ProfileIcon } from '@/@components';
 
 const Introduction = () => {
   return (
-    <TitleWithImage>
-      <TitleWithImage.Title>내 주변 술친구를 마주할</TitleWithImage.Title>
-      <TitleWithImage.Title>
-        <TitleWithImage.Emphasis>프로필을 등록</TitleWithImage.Emphasis>
+    <Container>
+      <Typography>내 주변 술친구를 마주할</Typography>
+      <Typography>
+        <Emphasis>프로필을 등록</Emphasis>
         해주세요.
-      </TitleWithImage.Title>
+      </Typography>
       <ProfileIcon extended={true} />
-    </TitleWithImage>
+    </Container>
   );
 };
 export default Introduction;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
