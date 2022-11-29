@@ -33,6 +33,7 @@ export { default as TitleWithImage } from './Molecule/TitleWithImage';
 export { default as GuideSection } from './Molecule/GuideSection';
 export { default as MenuBarIcon } from './Molecule/MenuBarIcon';
 export { default as ProfileMainInfo } from './Molecule/ProfileMainInfo';
+export { default as CardKeyword } from './Molecule/CardKeyword';
 
 export { default as Layout } from './Organism/Layout';
 export { default as PostTextarea } from './Organism/PostTextarea';
