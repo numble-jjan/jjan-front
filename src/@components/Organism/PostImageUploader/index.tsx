@@ -5,6 +5,8 @@ import { ImageUploader, Typography, UploadImageIcon } from '@/@components/';
 
 const DEFAULT_SRC = 'icons/icon-camera-gray.svg';
 
+//TODO: 현재 PostimageUploader에서 정의된 state를 페이지 레벨로 옮겨야한다.
+
 const PostImageUploader = () => {
   const [src, setSrc] = useState(DEFAULT_SRC);
   const [uploaded, setUploaded] = useState(false);
