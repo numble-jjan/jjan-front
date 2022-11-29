@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Root = styled.section`
+export const Container = styled.section`
   text-align: center;
   padding: 16px;
   img {
@@ -9,19 +9,9 @@ export const Root = styled.section`
     height: 90px;
   }
 `;
-export const ButtonContainer = styled.div`
-  margin-top: 50px;
-`;
-
-export const TextBox = styled.div`
-  display: inline-block;
-`;
-
-export const Firstgreeting = styled.div`
+export const GreetingWrapper = styled.div`
   margin-top: 44px;
-`;
-
-export const Introduce = styled.div`
-  margin-top: 14px;
-  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

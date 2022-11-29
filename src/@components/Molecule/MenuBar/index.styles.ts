@@ -15,6 +15,8 @@ export const CommunityIconWrapper = styled.div`
   background: linear-gradient(135deg, ${color.purple} 0%, #925ce9 100%);
   box-shadow: -9px 4px 20px rgba(146, 92, 233, 0.3);
   img {
+    width: 29.33px;
+    height: 16.67px;
     margin-top: 18.67px;
     margin-bottom: 8.67px;
   }
@@ -27,15 +29,4 @@ export const IconsContainer = styled.div`
   background: ${color.white};
   border-top: 1px solid ${color.light_gray2};
   display: inline-block;
-`;
-
-export const IconContainer = styled.div`
-  width: 25%;
-  height: 60px;
-  float: left;
-  text-align: center;
-  img {
-    margin-top: 12px;
-    margin-bottom: 6px;
-  }
 `;

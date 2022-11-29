@@ -7,6 +7,7 @@ export const color = {
   light_gray1: '#DDDDDD',
   light_gray2: '#EEEEEE',
   light_gray3: '#F9F9F9',
+  light_gray4: '#D9D9D9',
   gray: '#666666',
   dark_gray: '#999999',
   black: '#000000',
@@ -71,6 +72,7 @@ export const btn10 = {
   backgroundColor: `${color.white}`,
   border: '1px solid',
   borderColor: `${color.purple}`,
+  height: '50px',
   filter: 'drop-shadow(0px 10px 20px rgba(104, 60, 237, 0.16))',
 };
 
