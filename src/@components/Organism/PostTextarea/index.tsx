@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import styled from 'styled-components';
 
 import { Textarea, Typography } from '@/@components';
 import { color, font } from '@/styles/theme';
 
 interface Props {
-  onChange?: () => void;
-  textLength: number;
+  onChange?: (e: ChangeEvent<HTMLTextAreaElement>) => void;
+  textLength?: number;
 }
 
 const PostTextarea = ({ onChange, textLength = 0 }: Props) => {
