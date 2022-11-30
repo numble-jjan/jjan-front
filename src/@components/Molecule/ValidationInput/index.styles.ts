@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { color } from '@/styles/theme';
 
-export const Container = styled.div<{ isValid?: boolean }>`
+export const InputWrapper = styled.div<{ isValid?: boolean }>`
   width: 100%;
   height: 40px;
   background-color: ${color.white};
@@ -14,4 +14,8 @@ export const Container = styled.div<{ isValid?: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const Container = styled.div`
+  display: flex;
 `;
