@@ -10,6 +10,7 @@ export { default as Chip } from './Atoms/Chip';
 export { default as Divider } from './Atoms/Divider';
 
 export { default as Card } from './Molecule/Card';
+export { default as CancelIcon } from './Molecule/CancelIcon';
 export { default as CommunityBox } from './Molecule/CommunityBox';
 export { default as ConfirmModal } from './Molecule/ConfirmModal';
 export { default as ExitModal } from './Molecule/ExitModal';
@@ -32,6 +33,8 @@ export { default as PostingButton } from './Molecule/PostingButton';
 export { default as GuideSection } from './Molecule/GuideSection';
 export { default as MenuBarIcon } from './Molecule/MenuBarIcon';
 export { default as ProfileMainInfo } from './Molecule/ProfileMainInfo';
+export { default as TagChip } from './Molecule/TagChip';
+export { default as Emphasis } from './Molecule/Emphasis';
 
 export { default as Layout } from './Organism/Layout';
 export { default as PostTextarea } from './Organism/PostTextarea';
