@@ -7,6 +7,8 @@ import SignUP from './pages/SignUp';
 import SignUpCompleted from './pages/SignUpCompleted';
 import Login from './pages/Login';
 import WritePost from './pages/WritePost';
+import DrinkKeywordSetting from './pages/DrinkKeywordSetting';
+import MoodKeywordSetting from './pages/MoodKeywordSetting';
 
 const AppRouter = () => {
   return (
@@ -19,6 +21,11 @@ const AppRouter = () => {
           <Route path="/profilesetting" element={<ProfileSetting />} />
           <Route path="/login" element={<Login />} />
           <Route path="writepost" element={<WritePost />} />
+          <Route
+            path="/drinkKeywordSetting"
+            element={<DrinkKeywordSetting />}
+          />
+          <Route path="/moodKeywordSetting" element={<MoodKeywordSetting />} />
         </Routes>
       </BrowserRouter>
     </>
