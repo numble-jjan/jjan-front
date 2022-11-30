@@ -7,7 +7,6 @@ import Buttons from './Buttons';
 import { HeaderCompound } from '@/@components/Molecule/Header';
 import NicknameForm from './NicknameForm';
 
-
 const ProfileSetting = () => {
   return (
     <div>
