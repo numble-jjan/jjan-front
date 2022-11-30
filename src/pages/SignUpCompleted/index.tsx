@@ -1,12 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import {
-  Button,
-  TitleWithImage,
-  Typography,
-  GuideSection,
-} from '../../@components';
+import { Button, Typography, GuideSection } from '../../@components';
 
 import * as Styled from './index.styles';
 import { btn1, color, font } from '../../styles/theme';
@@ -14,19 +9,23 @@ import { btn1, color, font } from '../../styles/theme';
 const SignUpCompleted = () => {
   return (
     <Styled.Container>
-      <TitleWithImage>
-        <TitleWithImage.Image
-          src={'icons/icon-good.svg'}
-          style={{ marginTop: '20px', marginBottom: '20px' }}
-        />
-        <TitleWithImage.Title>반갑습니다</TitleWithImage.Title>
-        <TitleWithImage.Title>
-          <TitleWithImage.Emphasis>abc@gmail.com</TitleWithImage.Emphasis>님!
-        </TitleWithImage.Title>
-        <TitleWithImage.Title>
-          JJAN 회원이 되신걸 축하드립니다!
-        </TitleWithImage.Title>
-      </TitleWithImage>
+      <img src="icons/icon-good.svg" />
+      <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
+        반갑습니다
+      </Typography>
+      <Typography
+        color={color.purple}
+        fontSize={font.size.title}
+        fontWeight={font.weight.bold}
+      >
+        abc@gmail.com
+      </Typography>
+      <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
+        님!
+      </Typography>
+      <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
+        JJAN 회원이 되신걸 축하드립니다!
+      </Typography>
       <GuideSection
         firstChildren={
           <>
