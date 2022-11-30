@@ -1,21 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from '@/@components/Atoms/Image';
+import { Image, CancelIcon } from '@/@components';
 import { color } from '@/styles/theme';
 
 interface Props {
-  onClick?: () => void;
+  src: string;
+  onClickDelete: () => void;
+  uploaded: boolean;
 }
-const UploadImageIcon = ({ onClick }: Props) => {
+const UploadImageIcon = ({ src, uploaded, onClickDelete, ...rest }: Props) => {
   return (
-    <Container onClick={onClick}>
-      <Image src="icons/icon-camera-gray.svg" alt="카메라 아이콘" />
+    <Container uploaded={uploaded} {...rest}>
+      <Image src={src} alt="업로드된 이미지" />
+      {uploaded && <CancelIcon onClickDelete={onClickDelete} />}
     </Container>
   );
 };
 export default UploadImageIcon;
 
-const Container = styled.div`
+interface ContainerProps {
+  uploaded: boolean;
+}
+const Container = styled.div<ContainerProps>`
+  position: relative;
   width: 74px;
   height: 74px;
   border: 1px solid ${color.light_gray1};
@@ -23,4 +30,15 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  overflow: hidden;
+  & > img:first-child {
+    width: ${({ uploaded }) => (uploaded ? `100%` : `18px`)};
+    height: ${({ uploaded }) => (uploaded ? `100%` : `14px`)};
+    object-fit: ${({ uploaded }) => uploaded && `contain`};
+  }
+  & > img:nth-child(2) {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
 `;

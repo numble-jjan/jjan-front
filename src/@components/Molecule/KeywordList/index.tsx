@@ -1,6 +1,6 @@
 import React, { CSSProperties, useState } from 'react';
 import { Button, Typography } from '@/@components';
-import { btn8, btn10, color, font } from '@/styles/theme';
+import { btn8, btn10, color, font, btn1 } from '@/styles/theme';
 import * as Styled from './index.styles';
 
 interface List {
@@ -16,46 +16,60 @@ interface Props {
 
 const KeywordList = ({ keywordList, style }: Props) => {
   const [keyList, setKeyList] = useState<List[]>(keywordList);
+  // onClick 함수는 추후 추가
   return (
     <Styled.Container style={style}>
       <Styled.SubContainer>
-        {keyList &&
-          keyList.map((keyword: List) => {
-            return (
-              keyword && (
-                <Styled.ButtonWrapper className={'keyword'} key={keyword.id}>
-                  <Button
-                    onClick={() => {
-                      setKeyList(
-                        keyList.map((value: List) =>
-                          value.id === keyword.id
-                            ? {
-                                ...value,
-                                isSelected: !value.isSelected,
-                              }
-                            : { ...value },
-                        ),
-                      );
-                    }}
-                    style={keyword.isSelected === true ? btn10 : btn8}
-                  >
-                    <Typography
-                      color={
-                        keyword.isSelected === true
-                          ? color.purple
-                          : color.dark_gray
-                      }
-                      fontSize={font.size.content}
-                      fontWeight={font.weight.bold}
+        <Styled.ListContainer>
+          {keyList &&
+            keyList.map((keyword: List) => {
+              return (
+                keyword && (
+                  <Styled.ItemWrapper className={'keyword'} key={keyword.id}>
+                    <Button
+                      onClick={() => {
+                        setKeyList(
+                          keyList.map((value: List) =>
+                            value.id === keyword.id
+                              ? {
+                                  ...value,
+                                  isSelected: !value.isSelected,
+                                }
+                              : { ...value },
+                          ),
+                        );
+                      }}
+                      style={keyword.isSelected === true ? btn10 : btn8}
                     >
-                      {keyword.keyword}
-                    </Typography>
-                  </Button>
-                </Styled.ButtonWrapper>
-              )
-            );
-          })}
+                      <Typography
+                        color={
+                          keyword.isSelected === true
+                            ? color.purple
+                            : color.dark_gray
+                        }
+                        fontSize={font.size.content}
+                        fontWeight={font.weight.bold}
+                      >
+                        {keyword.keyword}
+                      </Typography>
+                    </Button>
+                  </Styled.ItemWrapper>
+                )
+              );
+            })}
+        </Styled.ListContainer>
       </Styled.SubContainer>
+      <Styled.ButtonWrapper>
+        <Button style={btn1}>
+          <Typography
+            color={color.white}
+            fontSize={font.size.content}
+            fontWeight={font.weight.bold}
+          >
+            설정하기
+          </Typography>
+        </Button>
+      </Styled.ButtonWrapper>
     </Styled.Container>
   );
 };

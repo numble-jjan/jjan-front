@@ -25,24 +25,23 @@ const CommunityBox = ({
       <MiniBox
         headerChildren={
           <Styled.HeaderContainer>
-            <img src="icons/icon-heart.svg" />
-            <Typography
-              color={color.light_purple}
-              fontSize={font.size.m}
-              fontWeight={font.weight.bold}
-              style={{ float: 'left', marginLeft: '5px', lineHeight: '19px' }}
-            >
-              {likes}
-            </Typography>
+            <Styled.LikeWrapper>
+              <img src="icons/icon-heart.svg" />
+              <Typography
+                color={color.light_purple}
+                fontSize={font.size.m}
+                fontWeight={font.weight.bold}
+                style={{ marginLeft: '5px', marginTop: '1px' }}
+              >
+                {likes}
+              </Typography>
+            </Styled.LikeWrapper>
             <Typography
               color={color.dark_gray}
               fontSize={font.size.s}
               fontWeight={font.weight.medium}
               style={{
-                float: 'right',
-                lineHeight: '17px',
-                letterSpacing: '-0.2px',
-                marginTop: '1px',
+                justifyContent: 'flex-end',
               }}
             >
               {date}

@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-  padding: 11px 13px 13px 12.82px;
-  img {
-    float: left;
-    margin-top: 1px;
-  }
+  padding: 11px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+export const LikeWrapper = styled.div`
+  display: flex;
+  justify-content: flex-start;
 `;
 export const ContentContainer = styled.div`
   width: 100%;
@@ -14,12 +18,11 @@ export const ContentContainer = styled.div`
   position: relative;
 `;
 export const TypographyWrapper = styled.div`
-  display: inline-block;
+  display: flex;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
   line-height: 18.82px;
-  text-align: left;
   word-wrap: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 2;
