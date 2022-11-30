@@ -20,7 +20,7 @@ const NICKNAME_VALIDATION_MESSAGE = {
 const passwordRegex =
   /^(?=.*[A-Za-z])(?=.*d)(?=.*[$@$!%*#?&])[A-Za-zd$@$!%*#?&]{8,}$/;
 
-const nicknameRegex = /^/;
+// const nicknameRegex = /^/;
 
 export const schema = yup.object({
   email: yup
@@ -38,8 +38,6 @@ export const schema = yup.object({
       [yup.ref('password'), null],
       PASSWORD_VALIDATION_MESSAGE.notConfirmed,
     ),
-  nickname: yup
-    .string()
-    .required(NICKNAME_VALIDATION_MESSAGE.require)
-    .matches(nicknameRegex, NICKNAME_VALIDATION_MESSAGE.notMatched),
+  nickname: yup.string().required(NICKNAME_VALIDATION_MESSAGE.require),
+  // .matches(nicknameRegex, NICKNAME_VALIDATION_MESSAGE.notMatched),
 });
