@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 100;
+  font-display: auto;
   src: url(${NotoSansKR_Light_W2}) format('woff2'),
     url(${NotoSansKR_Light_W}) format('woff'),
     url(${NotoSansKR_Light_O}) format('truetype');
@@ -30,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: normal;
+    font-display: auto;
     src: url(${NotoSansKR_Regular_W2}) format('woff2'),
       url(${NotoSansKR_Regular_W}) format('woff'),
       url(${NotoSansKR_Regular_O}) format('truetype');
@@ -39,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
+    font-display: auto;
     src: url(${NotoSansKR_Medium_W2}) format('woff2'),
       url(${NotoSansKR_Medium_W}) format('woff'),
       url(${NotoSansKR_Medium_O}) format('truetype');
@@ -48,6 +51,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: bold;
+    font-display: auto;
     src: url(${NotoSans_KR_Bold_W2}) format('woff2'),
       url(${NotoSans_KR_Bold_W}) format('woff'),
       url(${NotoSans_KR_Bold_O}) format('truetype');
@@ -56,10 +60,12 @@ const GlobalStyle = createGlobalStyle`
   * { 
     box-sizing: border-box; 
     font-style: normal;
+    font-family: 'Noto Sans KR', sans-serif;  
   }
 
-  body {
-    font-family: 'Noto Sans KR', sans-serif;  
+  #backdrop, #modal {
+    position: relative;
+    z-index: 10;
   }
 
   input {
