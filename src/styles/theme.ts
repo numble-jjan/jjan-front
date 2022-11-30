@@ -226,7 +226,7 @@ type Badge = {
 export const badge: Badge = {
   gray: {
     border: `1px solid ${color.light_gray1}`,
-    color: `${color.light_gray1}`,
+    color: `${color.dark_gray}`,
     fontSize: `${font.size.s}`,
     fontWeight: `${font.weight.regular}`,
     height: '24px',

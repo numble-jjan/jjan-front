@@ -3,7 +3,10 @@ import styled from 'styled-components';
 
 import Introduction from './Introduction';
 import Buttons from './Buttons';
+
 import { HeaderCompound } from '@/@components/Molecule/Header';
+import NicknameForm from './NicknameForm';
+
 
 const ProfileSetting = () => {
   return (
@@ -14,7 +17,7 @@ const ProfileSetting = () => {
       </HeaderCompound>
       <Content>
         <Introduction />
-        {/** Input이 들어가는 자리 */}
+        <NicknameForm />
         <Buttons />
       </Content>
     </div>
