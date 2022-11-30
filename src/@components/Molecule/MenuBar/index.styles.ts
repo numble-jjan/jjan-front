@@ -8,7 +8,7 @@ export const Root = styled.div`
 
 export const CommunityIconWrapper = styled.div`
   width: 74.86px;
-  height: 68px;
+  height: 70px;
   text-align: center;
   position: absolute;
   display: inline-block;
@@ -25,7 +25,7 @@ export const CommunityIconWrapper = styled.div`
 export const IconsContainer = styled.div`
   width: 245px;
   height: 60px;
-  margin-top: 7px;
+  margin-top: 10px;
   background: ${color.white};
   border-top: 1px solid ${color.light_gray2};
   display: inline-block;
