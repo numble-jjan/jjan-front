@@ -4,7 +4,7 @@ import { color } from '@/styles/theme';
 export const Container = styled.div`
   height: 297px;
   width: 100%;
-  padding: 0px 19px;
+  padding: 0px 7px;
   background: ${color.light_gray3};
 `;
 export const FirstContainer = styled.div`

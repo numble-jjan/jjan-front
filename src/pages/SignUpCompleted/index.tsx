@@ -9,20 +9,22 @@ import { btn1, color, font } from '../../styles/theme';
 const SignUpCompleted = () => {
   return (
     <Styled.Container>
-      <img src="icons/icon-good.svg" />
+      <img className="good" src="icons/icon-good.svg" />
       <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
         반갑습니다
       </Typography>
-      <Typography
-        color={color.purple}
-        fontSize={font.size.title}
-        fontWeight={font.weight.bold}
-      >
-        abc@gmail.com
-      </Typography>
-      <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
-        님!
-      </Typography>
+      <Styled.TitleWapper>
+        <Typography
+          color={color.purple}
+          fontSize={font.size.title}
+          fontWeight={font.weight.bold}
+        >
+          abc@gmail.com
+        </Typography>
+        <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
+          님!
+        </Typography>
+      </Styled.TitleWapper>
       <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
         JJAN 회원이 되신걸 축하드립니다!
       </Typography>
@@ -34,14 +36,14 @@ const SignUpCompleted = () => {
               <Styled.EmphasisWapper>
                 <Typography
                   color={color.purple}
-                  fontSize={font.size.s}
-                  fontWeight={font.weight.medium}
+                  fontSize={font.size.m}
+                  fontWeight={font.weight.bold}
                 >
                   커뮤니티 서비스
                 </Typography>
                 <Typography
                   color={color.black}
-                  fontSize={font.size.s}
+                  fontSize={font.size.m}
                   fontWeight={font.weight.medium}
                 >
                   를 통해
@@ -49,7 +51,7 @@ const SignUpCompleted = () => {
               </Styled.EmphasisWapper>
               <Typography
                 color={color.black}
-                fontSize={font.size.s}
+                fontSize={font.size.m}
                 fontWeight={font.weight.medium}
               >
                 술에 대한 정보를 공유해보세요!
@@ -63,7 +65,7 @@ const SignUpCompleted = () => {
             <Styled.TypographyWapper>
               <Typography
                 color={color.black}
-                fontSize={font.size.s}
+                fontSize={font.size.m}
                 fontWeight={font.weight.medium}
               >
                 현 위치를 기반으로
@@ -71,14 +73,14 @@ const SignUpCompleted = () => {
               <Styled.EmphasisWapper>
                 <Typography
                   color={color.purple}
-                  fontSize={font.size.s}
-                  fontWeight={font.weight.medium}
+                  fontSize={font.size.m}
+                  fontWeight={font.weight.bold}
                 >
                   내 주변 술 메이트
                 </Typography>
                 <Typography
                   color={color.black}
-                  fontSize={font.size.s}
+                  fontSize={font.size.m}
                   fontWeight={font.weight.medium}
                 >
                   를 찾아보세요!
@@ -93,7 +95,7 @@ const SignUpCompleted = () => {
             <Styled.TypographyWapper>
               <Typography
                 color={color.black}
-                fontSize={font.size.s}
+                fontSize={font.size.m}
                 fontWeight={font.weight.medium}
               >
                 지역기반 커뮤니티를 통해
@@ -101,14 +103,14 @@ const SignUpCompleted = () => {
               <Styled.EmphasisWapper>
                 <Typography
                   color={color.purple}
-                  fontSize={font.size.s}
-                  fontWeight={font.weight.medium}
+                  fontSize={font.size.m}
+                  fontWeight={font.weight.bold}
                 >
                   내 지역 핫한 술집
                 </Typography>
                 <Typography
                   color={color.black}
-                  fontSize={font.size.s}
+                  fontSize={font.size.m}
                   fontWeight={font.weight.medium}
                 >
                   을 공유해보세요!
@@ -117,7 +119,7 @@ const SignUpCompleted = () => {
             </Styled.TypographyWapper>
           </>
         }
-        style={{ marginTop: '50px' }}
+        style={{ marginTop: '40px' }}
       />
       <Styled.ButtonContainer>
         <Link to="/" style={{ textDecoration: 'none' }}>
