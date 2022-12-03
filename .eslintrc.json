@@ -32,7 +32,6 @@
     "no-new-func": "error",
     "object-shorthand": ["error", "always"],
     "prefer-arrow-callback": "error",
-    "arrow-parens": "error",
     "prefer-destructuring": "error",
     "prefer-template": "error",
     "brace-style": "error",
