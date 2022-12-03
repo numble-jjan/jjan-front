@@ -23,9 +23,24 @@
     "no-console": ["error", { "allow": ["warn", "error", "info"] }],
     "eqeqeq": "error",
     "dot-notation": "error",
-    "no-unused-vars": "off",
     "react/prop-types": 0,
     "react/no-children-prop": 0,
-    "@typescript-eslint/no-unused-vars": ["error"]
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-unused-vars": "off",
+    "prefer-const": "warn",
+    "no-new-object": "error",
+    "no-new-func": "error",
+    "object-shorthand": ["error", "always"],
+    "prefer-arrow-callback": "error",
+    "arrow-parens": "error",
+    "prefer-destructuring": "error",
+    "prefer-template": "error",
+    "brace-style": "error",
+    "keyword-spacing": "error",
+    "padding-line-between-statements": "error",
+    //삭제된 룰
+    "array-bracket-newline": "off",
+    "array-element-newline": "off",
+    "object-property-newline": "off"
   }
 }
