@@ -98,10 +98,8 @@ export const font = {
     header: '18px',
   },
   weight: {
-    light: '100',
-    regular: 'normal',
-    medium: '500',
-    bold: 'bold',
+    regular: '400',
+    bold: '700',
   },
 };
 
@@ -156,18 +154,18 @@ export const typo10 = {
 };
 
 export const typo11 = {
-  size: '14px',
-  weight: '900',
-};
-
-export const typo12 = {
   size: '16px',
   weight: '400',
 };
 
-export const typo13 = {
-  size: '14px',
+export const typo12 = {
+  size: '16px',
   weight: '700',
+};
+
+export const typo13 = {
+  size: '18px',
+  weight: '400',
 };
 
 export const typo14 = {
