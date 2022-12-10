@@ -87,6 +87,7 @@
     "msw": "^0.49.1",
     "prop-types": "^15.8.1",
     "react-app-rewired": "^2.2.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
     "webpack": "^5.75.0"
   }
 }
