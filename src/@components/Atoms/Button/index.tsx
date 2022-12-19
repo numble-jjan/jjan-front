@@ -5,6 +5,11 @@ import { buttonHeight } from '@/styles/theme';
 
 // 현재 weight값은 700으로 고정된 상태로 스타일링을 진행함
 
+// const buttonShpes = {
+//   purple: 'purple',
+//   whiteWithPurple: 'whiteWithPurple',
+// };
+
 export type ButtonShape =
   | 'purple'
   | 'whiteWithPurple'
