@@ -246,3 +246,9 @@ export const badge: Badge = {
     height: '32px',
   },
 };
+
+export const buttonHeight = {
+  xs: '27px',
+  m: '40px',
+  l: '50px',
+};
