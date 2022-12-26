@@ -21,7 +21,7 @@ const ReplyComment = ({ parentId }: Props) => {
     e.preventDefault();
     const data = {
       id: childrenId,
-      comment: comment,
+      comment,
       responseTo: parentId,
     };
     setComments([...comments, data]);

@@ -41,7 +41,7 @@ export { default as Layout } from './Organism/Layout';
 export { default as PostTextarea } from './Organism/PostTextarea';
 export { default as PostImageUploader } from './Organism/PostImageUploader';
 export { default as PostRelatedTags } from './Organism/PostRelatedTags';
-export { default as CommunityPost } from './Organism/CommunityPost';
+// export { default as CommunityPost } from './Organism/CommunityPost';
 
 export { default as Content } from './Layout/Content';
 

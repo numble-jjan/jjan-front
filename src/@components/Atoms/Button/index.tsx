@@ -23,7 +23,7 @@ interface Props extends PropsWithChildren {
   height: ButtonHeight;
   style?: CSSProperties;
   onClick?: () => void;
-  disabled: boolean;
+  disabled?: boolean;
 }
 
 const Button = ({

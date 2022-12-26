@@ -17,8 +17,8 @@ const Comment = () => {
 
   const addComment = () => {
     const data = {
-      id: id,
-      comment: comment,
+      id,
+      comment,
       responseTo: 'root',
     };
     setComments([...comments, data]);

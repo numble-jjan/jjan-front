@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import WritePost from './pages/WritePost';
 import DrinkKeywordSetting from './pages/DrinkKeywordSetting';
 import MoodKeywordSetting from './pages/MoodKeywordSetting';
+import LocationSetting from './pages/LocationSetting';
 
 const AppRouter = () => {
   return (
@@ -26,6 +27,7 @@ const AppRouter = () => {
             element={<DrinkKeywordSetting />}
           />
           <Route path="/moodKeywordSetting" element={<MoodKeywordSetting />} />
+          <Route path="/locationSetting" element={<LocationSetting />} />
         </Routes>
       </BrowserRouter>
     </>

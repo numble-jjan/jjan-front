@@ -15,4 +15,5 @@ export const Default = Template.bind({});
 Default.args = {
   height: 'm',
   shape: 'purple',
+  children: 'Text',
 };
