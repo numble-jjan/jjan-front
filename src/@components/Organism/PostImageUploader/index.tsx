@@ -11,11 +11,14 @@ const PostImageUploader = () => {
   const [src, setSrc] = useState(DEFAULT_SRC);
   const [uploaded, setUploaded] = useState(false);
 
-  const onChangeFile = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.currentTarget.files;
+  const onChangeFile = ({
+    currentTarget,
+  }: React.ChangeEvent<HTMLInputElement>) => {
+    // const files = e.currentTarget.files;
+    const { files } = currentTarget;
     if (!files) return;
 
-    const file = files[0];
+    const [file] = files;
     const newSrc = URL.createObjectURL(file);
     setSrc(newSrc);
     setUploaded(true);
