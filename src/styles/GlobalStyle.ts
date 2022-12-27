@@ -35,8 +35,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box; 
     font-style: normal;
     font-family: 'Noto Sans KR', sans-serif;  
+    
   }
-  
+
   body{
     font-family: 'Noto Sans KR';
   }
