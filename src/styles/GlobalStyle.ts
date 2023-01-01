@@ -10,7 +10,7 @@ import NotoSansKR_Regular_W2 from '../assets/fonts/NotoSansKR-Regular.woff2';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
-
+  
   @font-face {
     font-family: 'Noto Sans KR';
     font-style: normal;
@@ -35,6 +35,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box; 
     font-style: normal;
     font-family: 'Noto Sans KR', sans-serif;  
+    
+  }
+
+  body{
+    font-family: 'Noto Sans KR';
   }
 
   #backdrop, #modal {
