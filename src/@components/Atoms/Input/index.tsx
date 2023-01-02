@@ -15,8 +15,8 @@ InputBase.displayName = 'InputBase';
 
 interface IProps extends InputType {
   isValid?: boolean;
-  left?: React.ReactNode;
-  right?: React.ReactNode;
+  left?: string;
+  right?: string;
   ref?: React.Ref<HTMLInputElement>;
   shape: InputShape;
 }
@@ -26,9 +26,9 @@ const Input = forwardRef<HTMLInputElement, IProps>(
     const { shape, left, right, isValid } = props;
     return (
       <Styled.Container isValid={isValid} shape={shape}>
-        {left}
+        {left && <Styled.LeftImage src={left} />}
         <InputBase ref={ref} {...props} />
-        {right}
+        {right && <Styled.RightImage src={right} />}
       </Styled.Container>
     );
   },

@@ -56,3 +56,10 @@ export const Container = styled.div<ContainerProps>`
     }
   }}
 `;
+
+export const RightImage = styled.img`
+  margin-left: 4px;
+`;
+export const LeftImage = styled.img`
+  margin-right: 4px;
+`;
