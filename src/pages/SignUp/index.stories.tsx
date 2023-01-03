@@ -2,13 +2,11 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import LocationSetting from './index';
-
-// import { color, font } from '@/styles/theme';
+import SignUp from './index';
 
 export default {
-  title: 'pages/LocationSetting',
-  component: LocationSetting,
+  title: 'pages/SignUp',
+  component: SignUp,
   decorators: [
     Story => (
       <BrowserRouter>
@@ -16,10 +14,8 @@ export default {
       </BrowserRouter>
     ),
   ],
-} as ComponentMeta<typeof LocationSetting>;
+} as ComponentMeta<typeof SignUp>;
 
-const Template: ComponentStory<typeof LocationSetting> = () => (
-  <LocationSetting />
-);
+const Template: ComponentStory<typeof SignUp> = () => <SignUp />;
 
 export const Default = Template.bind({});

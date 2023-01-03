@@ -1,8 +1,9 @@
-import React, { InputHTMLAttributes, ReactNode } from 'react';
+import React, { InputHTMLAttributes } from 'react';
 import { UseFormRegisterReturn } from 'react-hook-form';
 import styled from 'styled-components';
 
-import { ValidationInput, Typography } from '@/@components';
+import { Typography } from '@/@components';
+import { Input } from '@/@components';
 
 import { InputType } from '@/@types/inputType';
 import { color, font } from '@/styles/theme';
@@ -16,7 +17,6 @@ interface IProps extends InputHTMLAttributes<HTMLInputElement> {
   confirmMessage?: string;
   required?: boolean;
   isTouched?: boolean;
-  right?: ReactNode;
 }
 
 const FormInput = ({
@@ -29,7 +29,6 @@ const FormInput = ({
   confirmMessage,
   required,
   isTouched,
-  right,
 }: IProps) => {
   return (
     <Container>
@@ -40,12 +39,12 @@ const FormInput = ({
       >
         {lable}
       </Typography>
-      <ValidationInput
+      <Input
         placeholder={placeholder}
         isValid={isValid}
         type={type}
         required={required}
-        right={right}
+        shape="border"
         {...register}
       />
       {!isValid && errorMessage && (
