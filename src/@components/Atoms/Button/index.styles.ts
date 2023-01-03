@@ -5,13 +5,16 @@ import Typography from '../Typography';
 
 import { color, font } from '@/styles/theme';
 
-export const Root = styled.button<{ shape: ButtonShape; height: string }>`
+export const Root = styled.button<{
+  shape: ButtonShape;
+  height: string;
+  width?: number;
+}>`
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 100%;
-
+  width: ${({ width }) => (width ? `${width}px` : `100%`)};
   border: none;
 
   height: ${({ height }) => height};

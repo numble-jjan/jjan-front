@@ -3,13 +3,6 @@ import React, { CSSProperties, PropsWithChildren } from 'react';
 import * as Styled from './index.styles';
 import { buttonHeight } from '@/styles/theme';
 
-// 현재 weight값은 700으로 고정된 상태로 스타일링을 진행함
-
-// const buttonShpes = {
-//   purple: 'purple',
-//   whiteWithPurple: 'whiteWithPurple',
-// };
-
 export type ButtonShape =
   | 'purple'
   | 'whiteWithPurple'
@@ -21,6 +14,7 @@ export type ButtonHeight = 'xs' | 'm' | 'l';
 interface Props extends PropsWithChildren {
   shape: ButtonShape;
   height: ButtonHeight;
+  width?: number;
   style?: CSSProperties;
   onClick?: () => void;
   disabled?: boolean;
@@ -28,6 +22,7 @@ interface Props extends PropsWithChildren {
 
 const Button = ({
   shape,
+  width,
   height = 'm',
   style,
   onClick,
@@ -40,6 +35,7 @@ const Button = ({
     <Styled.Root
       shape={shape}
       height={heightValue}
+      width={width}
       style={style}
       onClick={onClick}
       disabled={disabled}
