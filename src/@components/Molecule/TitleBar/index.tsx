@@ -12,7 +12,7 @@ interface Props extends PropsWithChildren {
 
 const TitleBar = ({ essential, children }: Props) => {
   return (
-    <>
+    <div>
       <Styled.Container>
         <Typography
           color={color.black}
@@ -41,7 +41,7 @@ const TitleBar = ({ essential, children }: Props) => {
         )}
       </Styled.Container>
       <Divider color={color.black} />
-    </>
+    </div>
   );
 };
 

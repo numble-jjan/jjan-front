@@ -37,9 +37,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Noto Sans KR', sans-serif;  
     
   }
-
+  
   body{
     font-family: 'Noto Sans KR';
+    @media (max-width:576px){
+      width: 100%;
+    }
   }
 
   #backdrop, #modal {

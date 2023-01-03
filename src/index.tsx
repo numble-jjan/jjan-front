@@ -7,11 +7,6 @@ import App from './App';
 
 import GlobalStyle from './styles/GlobalStyle';
 
-const IndexPageWrapper = styled.div`
-  width: 320px;
-  height: 658px;
-`;
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
@@ -19,10 +14,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <RecoilRoot>
-      <IndexPageWrapper>
-        <GlobalStyle />
-        <App />
-      </IndexPageWrapper>
+      <GlobalStyle />
+      <App />
     </RecoilRoot>
   </React.StrictMode>,
 );
