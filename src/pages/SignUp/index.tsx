@@ -2,17 +2,23 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import { TitleBar, Header, Content, ConfirmModal } from '@/@components';
+import {
+  TitleBar,
+  Header,
+  Divider,
+  Content,
+  ConfirmModal,
+} from '@/@components';
 import GridItems from '@/@components/Atoms/GridItems';
 import SignUpForm from './SignUpForm';
 
-import { Button, Typography } from '@/@components';
-
-import { btn1, btn3, color, font } from '@/styles/theme';
+import { Button } from '@/@components';
 
 import { schema } from '@/constants/validationSchema';
 import { SignUpFormData } from './types';
 import { useModal } from '@/@hooks/useModal';
+
+import { color } from '@/styles/theme';
 
 const index = () => {
   const {
@@ -26,21 +32,17 @@ const index = () => {
   return (
     <>
       <Header title="회원 가입" />
+      <Divider color={color.light_gray2} />
       <Content>
         <TitleBar essential={true}>회원 정보</TitleBar>
         <SignUpForm register={register} errors={errors} />
         <GridItems rows={2} gap={5} style={{ marginTop: 'auto' }}>
-          <Button style={btn3} onClick={toggleModal}>
-            <Typography
-              color={color.purple}
-              fontSize={font.size.content}
-              fontWeight={font.weight.bold}
-            >
-              취소
-            </Typography>
+          <Button shape="whiteWithPurple" height="l" onClick={toggleModal}>
+            취소
           </Button>
           <Button
-            style={btn1}
+            shape="purple"
+            height="l"
             /* eslint-disable */
             onClick={handleSubmit(formData => {
               try {
@@ -50,13 +52,7 @@ const index = () => {
               }
             })}
           >
-            <Typography
-              color={color.white}
-              fontSize={font.size.content}
-              fontWeight={font.weight.bold}
-            >
-              회원가입
-            </Typography>
+            회원가입
           </Button>
         </GridItems>
       </Content>
