@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import { Button, Typography, GuideSection } from '../../@components';
 
 import * as Styled from './index.styles';
-import { btn1, color, font } from '../../styles/theme';
+import { color, font } from '../../styles/theme';
 
 const SignUpCompleted = () => {
   return (
     <Styled.Container>
       <img className="good" src="icons/icon-good.svg" />
-      <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
+      <Typography fontSize={font.size.title} fontWeight={font.weight.regular}>
         반갑습니다
       </Typography>
       <Styled.TitleWapper>
@@ -21,11 +21,11 @@ const SignUpCompleted = () => {
         >
           abc@gmail.com
         </Typography>
-        <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
+        <Typography fontSize={font.size.title} fontWeight={font.weight.regular}>
           님!
         </Typography>
       </Styled.TitleWapper>
-      <Typography fontSize={font.size.title} fontWeight={font.weight.medium}>
+      <Typography fontSize={font.size.title} fontWeight={font.weight.regular}>
         JJAN 회원이 되신걸 축하드립니다!
       </Typography>
       <GuideSection
@@ -44,7 +44,7 @@ const SignUpCompleted = () => {
                 <Typography
                   color={color.black}
                   fontSize={font.size.m}
-                  fontWeight={font.weight.medium}
+                  fontWeight={font.weight.regular}
                 >
                   를 통해
                 </Typography>
@@ -52,7 +52,7 @@ const SignUpCompleted = () => {
               <Typography
                 color={color.black}
                 fontSize={font.size.m}
-                fontWeight={font.weight.medium}
+                fontWeight={font.weight.regular}
               >
                 술에 대한 정보를 공유해보세요!
               </Typography>
@@ -66,7 +66,7 @@ const SignUpCompleted = () => {
               <Typography
                 color={color.black}
                 fontSize={font.size.m}
-                fontWeight={font.weight.medium}
+                fontWeight={font.weight.regular}
               >
                 현 위치를 기반으로
               </Typography>
@@ -81,7 +81,7 @@ const SignUpCompleted = () => {
                 <Typography
                   color={color.black}
                   fontSize={font.size.m}
-                  fontWeight={font.weight.medium}
+                  fontWeight={font.weight.regular}
                 >
                   를 찾아보세요!
                 </Typography>
@@ -96,7 +96,7 @@ const SignUpCompleted = () => {
               <Typography
                 color={color.black}
                 fontSize={font.size.m}
-                fontWeight={font.weight.medium}
+                fontWeight={font.weight.regular}
               >
                 지역기반 커뮤니티를 통해
               </Typography>
@@ -111,7 +111,7 @@ const SignUpCompleted = () => {
                 <Typography
                   color={color.black}
                   fontSize={font.size.m}
-                  fontWeight={font.weight.medium}
+                  fontWeight={font.weight.regular}
                 >
                   을 공유해보세요!
                 </Typography>
@@ -123,7 +123,7 @@ const SignUpCompleted = () => {
       />
       <Styled.ButtonContainer>
         <Link to="/" style={{ textDecoration: 'none' }}>
-          <Button style={btn1}>
+          <Button shape="purple" height="l">
             <Typography
               color={color.white}
               fontSize={font.size.content}

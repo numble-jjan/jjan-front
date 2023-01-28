@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button, Typography } from '@/@components';
 
 import * as Styled from './index.styles';
-import { btn1, color, font } from '@/styles/theme';
+import { color, font } from '@/styles/theme';
 
 const Onboarding = () => {
   return (
@@ -49,7 +49,7 @@ const Onboarding = () => {
         오늘 하루도 짠-!
       </Typography>
       <Link to="/" style={{ textDecoration: 'none' }}>
-        <Button style={btn1}>
+        <Button shape="purple" height="l">
           <Typography
             color={color.white}
             fontSize={font.size.content}

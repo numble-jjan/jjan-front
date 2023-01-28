@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Typography, Backdrop, Button } from '@/@components';
 import GridItem from '@/@components/Atoms/GridItems';
 
-import { color, btn1, btn3 } from '@/styles/theme';
+import { color } from '@/styles/theme';
 
 interface Props {
   isOpen: boolean;
@@ -32,12 +32,12 @@ const ConfirmModal = ({ isOpen, message, onConfirm, onCancle }: Props) => {
               <Typography fontSize={14}>{message}</Typography>
             </MessageBox>
             <GridItem rows={2} gap={0}>
-              <Button style={btn3} onClick={onConfirm}>
+              <Button shape="whiteWithPurple" height="l" onClick={onConfirm}>
                 <Typography fontSize={14} color={color.purple}>
                   예
                 </Typography>
               </Button>
-              <Button style={btn1} onClick={onCancle}>
+              <Button shape="purple" height="l" onClick={onCancle}>
                 <Typography fontSize={14} color={color.white}>
                   아니요
                 </Typography>

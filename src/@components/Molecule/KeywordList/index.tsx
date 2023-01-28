@@ -1,6 +1,6 @@
 import React, { CSSProperties, useState } from 'react';
 import { Button, Typography } from '@/@components';
-import { btn8, btn10, color, font, btn1 } from '@/styles/theme';
+import { color, font } from '@/styles/theme';
 import * as Styled from './index.styles';
 
 interface List {
@@ -39,7 +39,10 @@ const KeywordList = ({ keywordList, style }: Props) => {
                           ),
                         );
                       }}
-                      style={keyword.isSelected === true ? btn10 : btn8}
+                      shape={
+                        keyword.isSelected ? 'whiteWithPurple' : 'whiteWithGray'
+                      }
+                      height="l"
                     >
                       <Typography
                         color={
@@ -60,7 +63,7 @@ const KeywordList = ({ keywordList, style }: Props) => {
         </Styled.ListContainer>
       </Styled.SubContainer>
       <Styled.ButtonWrapper>
-        <Button style={btn1}>
+        <Button shape="purple" height="l">
           <Typography
             color={color.white}
             fontSize={font.size.content}

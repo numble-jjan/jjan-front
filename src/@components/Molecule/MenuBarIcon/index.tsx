@@ -20,7 +20,7 @@ const MenuBarIcon = ({ src, menuTitle, isSelected, style, onClick }: Props) => {
       <Typography
         color={isSelected === true ? color.purple : color.black}
         fontSize={font.size.menubar}
-        fontWeight={isSelected === true ? font.weight.bold : font.weight.medium}
+        fontWeight={isSelected === true ? font.weight.bold : font.weight.bold}
       >
         {menuTitle}
       </Typography>

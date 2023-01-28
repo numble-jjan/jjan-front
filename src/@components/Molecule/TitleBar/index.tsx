@@ -17,7 +17,7 @@ const TitleBar = ({ essential, children }: Props) => {
         <Typography
           color={color.black}
           fontSize={font.size.title}
-          fontWeight={font.weight.medium}
+          fontWeight={font.weight.regular}
         >
           {children}
         </Typography>
@@ -26,14 +26,14 @@ const TitleBar = ({ essential, children }: Props) => {
             <Typography
               color={color.purple}
               fontSize={font.size.s}
-              fontWeight={font.weight.medium}
+              fontWeight={font.weight.regular}
             >
               *
             </Typography>
             <Typography
               color={color.black}
               fontSize={font.size.s}
-              fontWeight={font.weight.medium}
+              fontWeight={font.weight.regular}
             >
               필수사항
             </Typography>

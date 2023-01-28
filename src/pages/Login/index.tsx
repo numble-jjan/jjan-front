@@ -6,7 +6,7 @@ import { Button, Typography, Content, Header } from '@/@components';
 import LoginForm from './LoginForm';
 import * as Styled from './index.styles';
 
-import { btn1, color, font } from '@/styles/theme';
+import { color, font } from '@/styles/theme';
 
 import { LoginFormData } from './types';
 import { schema } from '@/constants/validationSchema';
@@ -25,7 +25,8 @@ const index = () => {
         <LoginForm register={register} errors={errors} />
         <Styled.ButtonContainer>
           <Button
-            style={btn1}
+            shape="purple"
+            height="l"
             /* eslint-disable */
             onClick={handleSubmit(data => console.log(data))}
           >

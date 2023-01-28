@@ -41,7 +41,7 @@ const Comment = () => {
             <Typography
               color={color.black}
               fontSize={font.size.m}
-              fontWeight={font.weight.medium}
+              fontWeight={font.weight.bold}
               style={{ lineHeight: '19px', letterSpacing: '-0.3px' }}
             >
               {item.comment}

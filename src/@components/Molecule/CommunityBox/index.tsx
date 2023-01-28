@@ -39,7 +39,7 @@ const CommunityBox = ({
             <Typography
               color={color.dark_gray}
               fontSize={font.size.s}
-              fontWeight={font.weight.medium}
+              fontWeight={font.weight.bold}
               style={{
                 justifyContent: 'flex-end',
               }}
@@ -54,7 +54,7 @@ const CommunityBox = ({
               <Typography
                 color={color.black}
                 fontSize={font.size.m}
-                fontWeight={font.weight.medium}
+                fontWeight={font.weight.bold}
               >
                 {content}
               </Typography>

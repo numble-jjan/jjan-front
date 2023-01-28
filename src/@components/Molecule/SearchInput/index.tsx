@@ -15,7 +15,7 @@ const SearchInput = ({ type, ref, icon, ...props }: Props) => {
   const Icon = icon;
   return (
     <Styled.Container>
-      <Input type={type} ref={ref} {...props} />
+      <Input shape="bottomLine" type={type} ref={ref} {...props} />
       {Icon && <Icon />}
     </Styled.Container>
   );
