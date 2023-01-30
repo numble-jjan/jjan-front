@@ -10,6 +10,7 @@ export { default as Chip } from './Atoms/Chip';
 export { default as Divider } from './Atoms/Divider';
 
 export { default as Card } from './Molecule/Card';
+export { default as CardKeyword } from './Molecule/CardKeyword';
 export { default as CommunityBox } from './Molecule/CommunityBox';
 export { default as ConfirmModal } from './Molecule/ConfirmModal';
 export { default as ExitModal } from './Molecule/ExitModal';

@@ -28,6 +28,8 @@ const CategoryBar = ({ activeBoardIndex, setActiveBoardIndex }: Props) => {
           return (
             <Button
               key={index}
+              shape="gray"
+              height="m"
               onClick={createClickHandler(index)}
               style={btn_board_active}
             >
@@ -44,6 +46,8 @@ const CategoryBar = ({ activeBoardIndex, setActiveBoardIndex }: Props) => {
           return (
             <Button
               key={index}
+              shape="gray"
+              height="m"
               onClick={createClickHandler(index)}
               style={btn_board_inactive}
             >

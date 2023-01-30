@@ -28,7 +28,7 @@ const InterestedBarBox = ({
               <Typography
                 color={color.black}
                 fontSize={font.size.m}
-                fontWeight={font.weight.medium}
+                fontWeight={font.weight.bold}
               >
                 {location}
               </Typography>
@@ -41,7 +41,7 @@ const InterestedBarBox = ({
               <Typography
                 color={color.black}
                 fontSize={font.size.m}
-                fontWeight={font.weight.medium}
+                fontWeight={font.weight.bold}
               >
                 {BarName}
               </Typography>
@@ -49,7 +49,7 @@ const InterestedBarBox = ({
             <Typography
               color={color.dark_gray}
               fontSize={font.size.xs}
-              fontWeight={font.weight.medium}
+              fontWeight={font.weight.bold}
             >
               {BarType}
             </Typography>

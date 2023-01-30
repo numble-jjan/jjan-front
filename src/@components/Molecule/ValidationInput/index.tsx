@@ -17,7 +17,7 @@ const ValidationInput = forwardRef<HTMLInputElement, Props>(
     return (
       <Styled.Container>
         <Styled.InputWrapper isValid={isValid}>
-          <Input type={type} ref={ref} {...props} />
+          <Input shape="border" type={type} ref={ref} {...props} />
         </Styled.InputWrapper>
         {right}
       </Styled.Container>

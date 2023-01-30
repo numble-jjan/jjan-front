@@ -49,14 +49,14 @@ const MoodKeywordSetting = () => {
         <Typography
           color={color.gray}
           fontSize={font.size.s}
-          fontWeight={font.weight.medium}
+          fontWeight={font.weight.regular}
         >
           JJAN이 매일 취향에 맞는
         </Typography>
         <Typography
           color={color.gray}
           fontSize={font.size.s}
-          fontWeight={font.weight.medium}
+          fontWeight={font.weight.regular}
         >
           오늘의 술을 추천드릴게요!
         </Typography>

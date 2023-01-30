@@ -61,7 +61,7 @@ const FormInput = ({
         <Typography
           color={color.purple}
           fontSize={font.size.s}
-          fontWeight={font.weight.medium}
+          fontWeight={font.weight.bold}
           style={{ marginTop: '3px' }}
         >
           {confirmMessage}

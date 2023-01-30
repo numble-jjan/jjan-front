@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { Typography, Button } from '@/@components';
-import { btn2, btn4, color } from '@/styles/theme';
+import { color } from '@/styles/theme';
 
 /**
  * todo
@@ -13,14 +13,14 @@ const Buttons = () => {
   return (
     <ButtonContainer>
       <Link to="/">
-        <Button style={btn4}>
+        <Button shape="whiteWithPurple" height="m">
           <Typography color={color.purple} fontSize={13}>
             활동지역 설정하기
           </Typography>
         </Button>
       </Link>
       <Link to="/">
-        <Button style={btn2}>
+        <Button shape="purple" height="m">
           <Typography color={color.white} fontSize={13}>
             프로필 설정하기
           </Typography>
